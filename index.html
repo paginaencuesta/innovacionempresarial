@@ -1575,6 +1575,71 @@
             const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpiZmZmbm1kYWZoanp5b3hqaWRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI0MTQ4MDQsImV4cCI6MjA0Nzk5MDgwNH0.QuwCs7R2AZEqyPtPxoXtWYodAyOOigmTmPE-w2AWz7w';
             const supabase1 = supabase.createClient(supabaseUrl, supabaseKey);
 
+            function descargarFormularioHTML() {
+                const form = document.getElementById('innovacion-form');
+                const formClone = form.cloneNode(true);  // Clona el formulario
+
+                // Recorre cada elemento del formulario clonado
+                formClone.querySelectorAll('input, select, textarea').forEach((element) => {
+                    const originalElements = element  // Obtiene los elementos originales con el mismo nombre
+
+                    if (element.type === 'checkbox' || element.type === 'radio') {
+                        // Si hay varios elementos con el mismo nombre (colección)
+                        if (originalElements.length) {
+                            // Busca el elemento que coincide con el clon actual
+                            for (let i = 0; i < originalElements.length; i++) {
+                                if (originalElements[i].checked === true) {
+                                    // element.checked = originalElements[i].checked;  // Asigna el estado checked correcto
+                                    element.setAttribute('checked', 'checked');
+                                    break;
+                                }
+                            }
+                        } else {  // Si es un solo elemento
+                            // element.checked = originalElements.checked;
+                            if (originalElements.checked) {
+                                element.setAttribute('checked', 'checked');
+                            }
+                        }
+                    } else if (element.tagName === 'SELECT') {
+                        // Selecciona la opción correcta en un <select>
+                        // element.value = originalElements.value;
+                        element.setAttribute('value', originalElements.value);
+
+                    } else {
+                        // Asigna valor a inputs de texto y textarea
+                        // element.value = originalElements.value;
+                        if (originalElements !== null) {
+                            element.setAttribute('value', originalElements.value);
+
+                        }
+                    }
+                });
+
+                // Construye el HTML con el formulario clonado
+                const htmlContent = `
+        <html>
+        <head><title>Formulario Guardado</title></head>
+        <body>
+            <h1>Formulario Guardado</h1>
+            ${formClone.outerHTML}  <!-- Inserta el formulario clonado con respuestas -->
+        </body>
+        </html>`;
+
+                // Crea un blob y genera el archivo HTML descargable
+                const blob = new Blob([htmlContent], { type: 'text/html' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'formulario_guardado.html';
+                link.click();
+            }
+
+            // Captura errores no controlados
+            window.onerror = function (message, source, lineno, colno, error) {
+                console.error('Error no controlado:', message);
+                alert('Ocurrió un error inesperado. Se descargará una copia del formulario.');
+                descargarFormularioHTML();  // Llama a la función de descarga
+            };
+
             async function insertarFormulario(datosFormulario, respuestasCheckboxes, colaboraciones, e) {
                 try {
                     // Inserta en la tabla principal de Supabase
@@ -1639,6 +1704,8 @@
                 } catch (error) {
                     console.error('Error al insertar datos:', error);
                     alert('Error al enviar el formulario');
+                    alert('Ocurrió un error. Se descargará una copia del formulario.');
+                    descargarFormularioHTML();
                 }
             }
 
@@ -1665,7 +1732,8 @@
                     telefono: formData.get('telefono'),
                     email: formData.get('email'),
                     sitio_web: formData.get('sitio-web'),
-
+                    estado_empresa: formData.get('estado-empresa'),
+                    ubicacion_matriz: formData.get('ubicacion-matriz'),
                     // Radio buttons (convertidos a booleano si es necesario)
                     grupo_empresarial: formData.get('grupo-empresarial') === 'si',
                     empresa_publica: formData.get('empresa-publica') === 'si',
@@ -1760,7 +1828,7 @@
 
 
                 // Envía los datos a Supabase
-                await insertarFormulario(datosFormulario, respuestasCheckboxes, colaboraciones,e);
+                await insertarFormulario(datosFormulario, respuestasCheckboxes, colaboraciones, e);
             });
 
             function obtenerFrecuenciaTexto(valor) {
