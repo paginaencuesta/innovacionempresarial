@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #innovacion-form {
+            max-width: 1180px;
+            margin: 20px;
+            margin-left: 100px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+</head>
+
+<body>
+    <form id="innovacion-form" method="post">
+
+        <h1>Cuestionario de Innovación Empresarial</h1>
+        <form id="innovacion-form" method="post">
+            <h2>Sección 1: Localidad y Características de la empresa</h2>
+
+            <label for="fecha">Fecha Registro:</label>
+            <input type="date" id="fecha" name="fecha"><br>
+
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" name="provincia"><br>
+
+            <label for="canton">Cantón:</label>
+            <input type="text" id="canton" name="canton"><br>
+
+            <label for="parroquia">Parroquia:</label>
+            <input type="text" id="parroquia" name="parroquia"><br>
+
+            <label for="encuestador">Encuestador:</label>
+            <input type="text" id="encuestador" name="encuestador"><br>
+
+            <h3>IDENTIFICACIÓN Y UBICACIÓN DE LA EMPRESA</h3>
+
+            <label for="razon-social">Nombre o Razón Social:</label>
+            <input type="text" id="razon-social" name="razon-social"><br>
+
+            <label for="ruc">RUC:</label>
+            <input type="text" id="ruc" name="ruc"><br>
+
+            <label for="direccion">Dirección Domicilio:</label>
+            <input type="text" id="direccion" name="direccion"><br>
+
+            <label for="codigo-postal">Código Postal:</label>
+            <input type="text" id="codigo-postal" name="codigo-postal"><br>
+
+            <label for="actividad-economica">Actividad Económica:</label>
+            <input type="text" id="actividad-economica" name="actividad-economica"><br>
+
+            <label for="ciiu">Código CIIU:</label>
+            <input type="text" id="ciiu" name="ciiu"><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br>
+
+            <label for="email">e-mail:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="sitio-web">Sitio Web:</label>
+            <input type="url" id="sitio-web" name="sitio-web"><br>
+
+            <h3>DATOS CARACTERÍSTICOS DE LA EMPRESA</h3>
+
+            <p>1. ¿Su empresa forma parte de un grupo empresarial?</p>
+            <input type="radio" id="grupo-emp-si" name="grupo-empresarial" value="si">
+            <label for="grupo-emp-si">Sí</label><br>
+            <input type="radio" id="grupo-emp-no" name="grupo-empresarial" value="no">
+            <label for="grupo-emp-no">No</label><br>
+
+            <p>2. ¿Dónde se localiza la casa matriz?</p>
+            <input type="radio" id="matriz-ec" name="ubicacion-matriz" value="Ecuador">
+            <label for="matriz-ec">Ecuador</label><br>
+            <input type="radio" id="matriz-latam" name="ubicacion-matriz" value="América Latina y el Caribe">
+            <label for="matriz-latam">América Latina y el Caribe</label><br>
+            <input type="radio" id="matriz-eeuu" name="ubicacion-matriz" value="EEUU y Canadá">
+            <label for="matriz-eeuu">EEUU y Canadá</label><br>
+            <input type="radio" id="matriz-europa" name="ubicacion-matriz" value="Europa">
+            <label for="matriz-europa">Europa</label><br>
+            <input type="radio" id="matriz-asia" name="ubicacion-matriz" value="Asia">
+            <label for="matriz-asia">Asia</label><br>
+            <input type="radio" id="matriz-africa" name="ubicacion-matriz" value="África">
+            <label for="matriz-africa">África</label><br>
+            <input type="radio" id="matriz-oceania" name="ubicacion-matriz" value="Oceanía">
+            <label for="matriz-oceania">Oceanía</label><br>
+
+            <p>3. ¿Indique si su empresa es una empresa pública?</p>
+            <input type="radio" id="publica-si" name="empresa-publica" value="si">
+            <label for="publica-si">Sí</label><br>
+            <input type="radio" id="publica-no" name="empresa-publica" value="no">
+            <label for="publica-no">No</label><br>
+
+            <label for="capital-extranjero">4. Indique el porcentaje de capital de origen extranjero:</label>
+            <input type="number" id="capital-extranjero" name="capital-extranjero" min="0" max="100">%<br>
+
+            <label for="establecimientos">5. Indique la cantidad de establecimientos:</label>
+            <input type="number" id="establecimientos" name="establecimientos"><br>
+
+            <label for="inicio-actividades">6. ¿En qué año inició sus actividades en el país?</label>
+            <input type="number" id="inicio-actividades" name="inicio-actividades"><br>
+
+            <p>7. Durante el período de 2022 a 2024 su empresa:</p>
+            <input type="radio" id="creada" name="estado-empresa" value="Fue creada">
+            <label for="creada">Fue creada</label><br>
+            <input type="radio" id="fusionada" name="estado-empresa" value="Se fusionó con otra empresa">
+            <label for="fusionada">Se fusionó con otra empresa</label><br>
+            <input type="radio" id="vendida" name="estado-empresa" value="Fue vendida a otra empresa">
+            <label for="vendida">Fue vendida a otra empresa</label><br>
+            <input type="radio" id="cerro-parte" name="estado-empresa" value="Cerró parte de su empresa">
+            <label for="cerro-parte">Cerró parte de su empresa</label><br>
+            <input type="radio" id="sin-cambios" name="estado-empresa" value="Ninguna de las anteriores">
+            <label for="sin-cambios">Ninguna de las anteriores</label><br>
+
+            <p>8. Durante el período 2021 a 2023, ¿cuáles fueron sus tres principales productos (bienes o servicios) con
+                base en el volumen de ventas?</p>
+            <ol type="a">
+                <li>
+                    <label for="prod1">Producto 1:</label>
+                    <input type="text" id="prod1" name="producto1">
+                    <label for="cpc1">Código CPC:</label>
+                    <input type="text" id="cpc1" name="codigo-cpc1">
+                </li>
+                <li>
+                    <label for="prod2">Producto 2:</label>
+                    <input type="text" id="prod2" name="producto2">
+                    <label for="cpc2">Código CPC:</label>
+                    <input type="text" id="cpc2" name="codigo-cpc2">
+                </li>
+                <li>
+                    <label for="prod3">Producto 3:</label>
+                    <input type="text" id="prod3" name="producto3">
+                    <label for="cpc3">Código CPC:</label>
+                    <input type="text" id="cpc3" name="codigo-cpc3">
+                </li>
+            </ol>
+
+            <!-- Sección 2: Datos de Ventas, Productos/Servicios y Personal -->
+            <h2>Sección 2: Datos de Ventas, Productos/Servicios y Personal</h2>
+
+            <h3>1. Cifras sobre el giro del negocio</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>2021</th>
+                        <th>2022</th>
+                        <th>2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a. Ventas</td>
+                        <td><input type="number" id="ventas2021" name="ventas-2021"></td>
+                        <td><input type="number" id="ventas2022" name="ventas-2022"></td>
+                        <td><input type="number" id="ventas2023" name="ventas-2023"></td>
+                    </tr>
+                    <tr>
+                        <td>b. Exportaciones</td>
+                        <td><input type="number" id="exportaciones2021" name="exportaciones-2021"></td>
+                        <td><input type="number" id="exportaciones2022" name="exportaciones-2022"></td>
+                        <td><input type="number" id="exportaciones2023" name="exportaciones-2023"></td>
+                    </tr>
+                    <tr>
+                        <td>c. Inversiones de capital fijo</td>
+                        <td><input type="number" id="inversiones2021" name="inversiones-2021"></td>
+                        <td><input type="number" id="inversiones2022" name="inversiones-2022"></td>
+                        <td><input type="number" id="inversiones2023" name="inversiones-2023"></td>
+                    </tr>
+                    <tr>
+                        <td>d. Empleo total (personas fijas)</td>
+                        <td><input type="number" id="empleo2021" name="empleo-2021"></td>
+                        <td><input type="number" id="empleo2022" name="empleo-2022"></td>
+                        <td><input type="number" id="empleo2023" name="empleo-2023"></td>
+                    </tr>
+                    <tr>
+                        <td>e. Empleados(as) asignados a proyectos de Innovación</td>
+                        <td><input type="number" id="empleados-innov2021" name="empleados-innov-2021"></td>
+                        <td><input type="number" id="empleados-innov2022" name="empleados-innov-2022"></td>
+                        <td><input type="number" id="empleados-innov2023" name="empleados-innov-2023"></td>
+                    </tr>
+                    <tr>
+                        <td>f. % Clientes Ecuador</td>
+                        <td><input type="number" id="clientes-ec2021" name="clientes-ec-2021" min="0" max="100">%</td>
+                        <td><input type="number" id="clientes-ec2022" name="clientes-ec-2022" min="0" max="100">%</td>
+                        <td><input type="number" id="clientes-ec2023" name="clientes-ec-2023" min="0" max="100">%</td>
+                    </tr>
+                    <tr>
+                        <td>g. % Clientes Extranjeros</td>
+                        <td><input type="number" id="clientes-ex2021" name="clientes-ex-2021" min="0" max="100">%</td>
+                        <td><input type="number" id="clientes-ex2022" name="clientes-ex-2022" min="0" max="100">%</td>
+                        <td><input type="number" id="clientes-ex2023" name="clientes-ex-2023" min="0" max="100">%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Sección 3: Estrategia, Cultura y estructura organizacional -->
+            <h2>Sección 3: Estrategia, Cultura y estructura organizacional</h2>
+
+            <p>1. ¿Su empresa tiene una estrategia formal y documentada para la gestión de la innovación?</p>
+            <input type="radio" id="est-informal" name="estrategia-innovacion" value="No hay una estrategia formal">
+            <label for="est-informal">No hay una estrategia formal.</label><br>
+            <input type="radio" id="est-evaluacion" name="estrategia-innovacion"
+                value="Hay una estrategia en proceso de evaluación">
+            <label for="est-evaluacion">Hay una estrategia en proceso de evaluación.</label><br>
+            <input type="radio" id="est-doc-no-imp" name="estrategia-innovacion"
+                value="Existe una estrategia documentada pero no se ha implementado">
+            <label for="est-doc-no-imp">Existe una estrategia documentada pero no se ha implementado.</label><br>
+            <input type="radio" id="est-implementada" name="estrategia-innovacion"
+                value="La estrategia está implementada y se mide su progreso">
+            <label for="est-implementada">La estrategia está implementada y se mide su progreso.</label><br>
+            <input type="radio" id="est-otro" name="estrategia-innovacion" value="otro">
+            <label for="est-otro">Otros:</label>
+            <input type="text" id="est-otro-especificar" name="estrategia-innovacion-otro">
+
+            <p>2. ¿Cómo clasificaría principalmente el enfoque de innovación de su empresa?</p>
+            <input type="radio" id="enf-interno" name="enfoque-innovacion" value="Interno">
+            <label for="enf-interno">Interno</label><br>
+            <input type="radio" id="enf-externo" name="enfoque-innovacion" value="Externo">
+            <label for="enf-externo">Externo</label><br>
+            <input type="radio" id="enf-mixto" name="enfoque-innovacion" value="Mixto (interno y externo)">
+            <label for="enf-mixto">Mixto (interno y externo)</label><br>
+            <input type="radio" id="enf-ninguno" name="enfoque-innovacion" value="Ninguna">
+            <label for="enf-ninguno">Ninguna</label><br>
+
+            <p>3. ¿Cómo se integra la estrategia de innovación con la estrategia general de la empresa?</p>
+            <input type="radio" id="int-no-hay" name="integracion-estrategias" value="No hay integración">
+            <label for="int-no-hay">No hay integración.</label><br>
+            <input type="radio" id="int-evaluando" name="integracion-estrategias"
+                value="Estamos evaluando la integración">
+            <label for="int-evaluando">Estamos evaluando la integración.</label><br>
+            <input type="radio" id="int-nivel-empresa" name="integracion-estrategias"
+                value="Integración a nivel de la empresa">
+            <label for="int-nivel-empresa">Integración a nivel de la empresa.</label><br>
+            <input type="radio" id="int-nivel-emp-unidad" name="integracion-estrategias"
+                value="Integración a nivel de la empresa y de las unidades de negocio">
+            <label for="int-nivel-emp-unidad">Integración a nivel de la empresa y de las unidades de
+                negocio.</label><br>
+            <input type="radio" id="int-impulsor-clave" name="integracion-estrategias"
+                value="Es un impulsor clave del valor empresarial">
+            <label for="int-impulsor-clave">Es un impulsor clave del valor empresarial.</label><br>
+
+            <p>4. En términos del enfoque y los procesos establecidos para gestionar la innovación en su empresa, ¿en
+                cuál de las siguientes etapas se encontrarían?</p>
+            <input type="radio" id="enfoque-no-formal" name="enfoque-gestion-innovacion"
+                value="No hay un enfoque o procesos formales establecidos para gestionar la innovación">
+            <label for="enfoque-no-formal">No hay un enfoque o procesos formales establecidos para gestionar la
+                innovación.</label><br>
+            <input type="radio" id="enfoque-basico" name="enfoque-gestion-innovacion"
+                value="Existe un enfoque básico, con algunos procesos y métricas informales para la innovación">
+            <label for="enfoque-basico">Existe un enfoque básico, con algunos procesos y métricas informales para la
+                innovación.</label><br>
+            <input type="radio" id="enfoque-estandarizado" name="enfoque-gestion-innovacion"
+                value="Hay procesos estandarizados para la gestión de la innovación y cierta integración con la estrategia de la empresa">
+            <label for="enfoque-estandarizado">Hay procesos estandarizados para la gestión de la innovación y cierta
+                integración con la estrategia de la empresa.</label><br>
+            <input type="radio" id="enfoque-integrado" name="enfoque-gestion-innovacion"
+                value="Los procesos de innovación están integrados, con métricas definidas y una gestión formal del portafolio de innovación">
+            <label for="enfoque-integrado">Los procesos de innovación están integrados, con métricas definidas y una
+                gestión formal del portafolio de innovación.</label><br>
+            <input type="radio" id="enfoque-optimizado" name="enfoque-gestion-innovacion"
+                value="La innovación es un proceso optimizado, adaptativo y completamente alineado con los objetivos estratégicos de la empresa">
+            <label for="enfoque-optimizado">La innovación es un proceso optimizado, adaptativo y completamente alineado
+                con los objetivos estratégicos de la empresa.</label><br>
+
+            <p>5. ¿La empresa ha generado iniciativas de innovación organizativas para que mejoren la eficiencia y la
+                flexibilidad interna?</p>
+            <input type="checkbox" id="rediseno-estructuras" name="iniciativas-innovacion[]"
+                value="Rediseñando estructuras organizativas">
+            <label for="rediseno-estructuras">Rediseñando estructuras organizativas.</label><br>
+            <input type="checkbox" id="colaboracion-interdepartamental" name="iniciativas-innovacion[]"
+                value="Fomentando la colaboración interdepartamental">
+            <label for="colaboracion-interdepartamental">Fomentando la colaboración interdepartamental.</label><br>
+            <input type="checkbox" id="gestion-conocimiento" name="iniciativas-innovacion[]"
+                value="Implementando prácticas de gestión del conocimiento">
+            <label for="gestion-conocimiento">Implementando prácticas de gestión del conocimiento.</label><br>
+            <input type="checkbox" id="mejora-procesos" name="iniciativas-innovacion[]"
+                value="Mejorando los procesos de toma de decisiones">
+            <label for="mejora-procesos">Mejorando los procesos de toma de decisiones.</label><br>
+            <label for="otra-iniciativa">Otro:</label>
+            <input type="text" id="otra-iniciativa" name="iniciativas-innovacion[]"><br>
+
+            <p>6. ¿Cómo calificaría el nivel de involucramiento de la alta dirección en las iniciativas de innovación de
+                la empresa?</p>
+            <input type="radio" id="involucrados-liderando" name="involucramiento-alta-direccion"
+                value="Muy involucrados, liderando y promoviendo la innovación">
+            <label for="involucrados-liderando">Muy involucrados, liderando y promoviendo la innovación</label><br>
+            <input type="radio" id="involucrados-apoyo" name="involucramiento-alta-direccion"
+                value="Involucrados en cierta medida, brindando apoyo">
+            <label for="involucrados-apoyo">Involucrados en cierta medida, brindando apoyo</label><br>
+            <input type="radio" id="poco-involucrados" name="involucramiento-alta-direccion"
+                value="Poco involucrados, delegan la innovación a otros niveles">
+            <label for="poco-involucrados">Poco involucrados, delegan la innovación a otros niveles</label><br>
+            <input type="radio" id="nada-involucrados" name="involucramiento-alta-direccion"
+                value="Nada involucrados, la innovación no es una prioridad">
+            <label for="nada-involucrados">Nada involucrados, la innovación no es una prioridad</label><br>
+
+            <p>7. ¿En qué medida su empresa ha buscado colaboraciones externas para desarrollar nuevos productos o
+                servicios?</p>
+            <input type="radio" id="colaboraciones-nunca" name="colaboraciones-externas" value="Nunca">
+            <label for="colaboraciones-nunca">Nunca</label><br>
+            <input type="radio" id="colaboraciones-ocasionalmente" name="colaboraciones-externas"
+                value="Ocasionalmente">
+            <label for="colaboraciones-ocasionalmente">Ocasionalmente</label><br>
+            <input type="radio" id="colaboraciones-frecuentemente" name="colaboraciones-externas"
+                value="Frecuentemente">
+            <label for="colaboraciones-frecuentemente">Frecuentemente</label><br>
+
+            <p>8. ¿Ha colaborado su empresa con otras organizaciones para impulsar la innovación en los últimos años?
+            </p>
+            <input type="radio" id="colaborado-si" name="colaboracion-otras-org" value="Sí">
+            <label for="colaborado-si">Sí</label><br>
+            <input type="radio" id="colaborado-no" name="colaboracion-otras-org" value="No">
+            <label for="colaborado-no">No</label><br>
+
+            <p>9. ¿Cuenta su empresa con un departamento o área específica dedicada a la innovación?</p>
+            <input type="radio" id="depto-formal" name="departamento-innovacion"
+                value="Sí, un departamento formal de innovación">
+            <label for="depto-formal">Sí, un departamento formal de innovación</label><br>
+            <input type="radio" id="area-no-depto" name="departamento-innovacion"
+                value="Sí, un área dedicada pero no un departamento separado">
+            <label for="area-no-depto">Sí, un área dedicada pero no un departamento separado</label><br>
+            <input type="radio" id="evaluando-crear" name="departamento-innovacion"
+                value="No, pero estamos evaluando crearlo">
+            <label for="evaluando-crear">No, pero estamos evaluando crearlo</label><br>
+            <input type="radio" id="no-area-especifica" name="departamento-innovacion"
+                value="No, no contamos con un área específica de innovación">
+            <label for="no-area-especifica">No, no contamos con un área específica de innovación</label><br>
+
+            <p>10. ¿Qué mecanismos implementa su empresa para fomentar la capacitación y el desarrollo profesional
+                continuo de sus colaboradores?</p>
+            <input type="checkbox" id="capacitacion-interna" name="mecanismos-capacitacion[]"
+                value="Programas de capacitación interna a cargo de personal de planta">
+            <label for="capacitacion-interna">Programas de capacitación interna a cargo de personal de
+                planta</label><br>
+            <input type="checkbox" id="entrenamiento-externo" name="mecanismos-capacitacion[]"
+                value="Programas de entrenamiento con especialistas externos o instituciones asociadas">
+            <label for="entrenamiento-externo">Programas de entrenamiento con especialistas externos o instituciones
+                asociadas</label><br>
+            <input type="checkbox" id="convenios-formacion" name="mecanismos-capacitacion[]"
+                value="Convenios vigentes con instituciones externas que facilitan la formación continua de los colaboradores">
+            <label for="convenios-formacion">Convenios vigentes con instituciones externas que facilitan la formación
+                continua de los colaboradores</label><br>
+            <input type="checkbox" id="financiamiento-cursos" name="mecanismos-capacitacion[]"
+                value="Financiamiento de programas y cursos de desarrollo profesional específicos, según requerimientos individuales de los colaboradores">
+            <label for="financiamiento-cursos">Financiamiento de programas y cursos de desarrollo profesional
+                específicos, según requerimientos individuales de los colaboradores</label><br>
+            <label for="otro-mecanismo">Otro:</label>
+            <input type="text" id="otro-mecanismo" name="mecanismos-capacitacion[]"><br>
+            <input type="checkbox" id="ninguna-capacitacion" name="mecanismos-capacitacion[]" value="Ninguno">
+            <label for="ninguna-capacitacion">Ninguno</label><br>
+
+            <p>10.1 ¿Con qué instituciones o entidades cuenta su empresa actualmente para la formación continua de sus
+                colaboradores?:</p>
+            <label for="instituciones-sin-convenio">Instituciones sin convenio formal:</label><br>
+            <textarea id="instituciones-sin-convenio" name="instituciones-sin-convenio" rows="3"></textarea><br>
+            <label for="instituciones-con-convenio">Instituciones con convenio formal:</label><br>
+            <textarea id="instituciones-con-convenio" name="instituciones-con-convenio" rows="3"></textarea><br>
+
+            <p>11. ¿Cómo fomenta su empresa la capacitación y el desarrollo profesional de los empleados?</p>
+            <input type="checkbox" id="programas-especificos" name="fomento-capacitacion[]"
+                value="Programas de capacitación y desarrollo específicos para cada nivel académico">
+            <label for="programas-especificos">Programas de capacitación y desarrollo específicos para cada nivel
+                académico.</label><br>
+            <input type="checkbox" id="oportunidades-equitativas" name="fomento-capacitacion[]"
+                value="Ofreciendo oportunidades de crecimiento y capacitación de manera equitativa para todos los empleados">
+            <label for="oportunidades-equitativas">Ofreciendo oportunidades de crecimiento y capacitación de manera
+                equitativa para todos los empleados.</label><br>
+            <label for="otro-fomento">Otro:</label>
+            <input type="text" id="otro-fomento" name="fomento-capacitacion[]"><br>
+            <input type="checkbox" id="ningun-fomento" name="fomento-capacitacion[]" value="Ninguno">
+            <label for="ningun-fomento">Ninguno</label><br>
+
+            <p>12. ¿Qué porcentaje aproximado de sus ventas destina a actividades de capacitación?</p>
+            <input type="radio" id="menos1porciento" name="porcentaje-ventas-capacitacion" value="Menos del 1%">
+            <label for="menos1porciento">Menos del 1%</label><br>
+            <input type="radio" id="1a5porciento" name="porcentaje-ventas-capacitacion" value="Entre 1% y 5%">
+            <label for="1a5porciento">Entre 1% y 5%</label><br>
+            <input type="radio" id="6a10porciento" name="porcentaje-ventas-capacitacion" value="Entre 6% y 10%">
+            <label for="6a10porciento">Entre 6% y 10%</label><br>
+            <input type="radio" id="mas10porciento" name="porcentaje-ventas-capacitacion" value="Más del 10%">
+            <label for="mas10porciento">Más del 10%</label><br>
+
+            <p>13. ¿Ha implementado su empresa programas de capacitación en los siguientes temas relacionados con la
+                innovación en los últimos 3 años?</p>
+            <input type="checkbox" id="designthinking" name="programas-capacitacion-innovacion[]"
+                value="Design Thinking">
+            <label for="designthinking">Design Thinking</label><br>
+            <input type="checkbox" id="scrum" name="programas-capacitacion-innovacion[]"
+                value="Scrum - Metodologías Ágiles">
+            <label for="scrum">Scrum - Metodologías Ágiles</label><br>
+            <input type="checkbox" id="modelos-innovadores" name="programas-capacitacion-innovacion[]"
+                value="Modelos de negocios innovadores">
+            <label for="modelos-innovadores">Modelos de negocios innovadores</label><br>
+            <input type="checkbox" id="cultura-innovacion" name="programas-capacitacion-innovacion[]"
+                value="Cultura de innovación">
+            <label for="cultura-innovacion">Cultura de innovación</label><br>
+            <input type="checkbox" id="innovacion-abierta" name="programas-capacitacion-innovacion[]"
+                value="Innovación abierta">
+            <label for="innovacion-abierta">Innovación abierta</label><br>
+            <label for="otro-programa-innovacion">Otro:</label>
+            <input type="text" id="otro-programa-innovacion" name="programas-capacitacion-innovacion[]"><br>
+            <input type="checkbox" id="ninguna-capacitacion-innovacion" name="programas-capacitacion-innovacion[]"
+                value="Ninguno">
+            <label for="ninguna-capacitacion-innovacion">Ninguno</label><br>
+
+            <p>14. En caso de no haber implementado programas de capacitación en innovación, ¿cuál ha sido el principal
+                motivo?</p>
+            <input type="radio" id="falta-presupuesto" name="motivo-no-capacitacion" value="Falta de presupuesto">
+            <label for="falta-presupuesto">Falta de presupuesto</label><br>
+            <input type="radio" id="falta-tiempo" name="motivo-no-capacitacion"
+                value="Falta de tiempo/disponibilidad del personal">
+            <label for="falta-tiempo">Falta de tiempo/disponibilidad del personal</label><br>
+            <input type="radio" id="desconocimiento-importancia" name="motivo-no-capacitacion"
+                value="Desconocimiento de la importancia de estas capacitaciones">
+            <label for="desconocimiento-importancia">Desconocimiento de la importancia de estas
+                capacitaciones</label><br>
+            <input type="radio" id="no-prioridad" name="motivo-no-capacitacion"
+                value="No se ha considerado una prioridad">
+            <label for="no- prioridad">No se ha considerado una prioridad</label><br> <label
+                for="otro-motivo-no-capacitacion">Otro:</label> <input type="text" id="otro-motivo-no-capacitacion"
+                name="motivo-no-capacitacion"><br>
+            <p>15. ¿Estaría su empresa interesada en implementar programas de capacitación en temas de innovación en el
+                futuro cercano?</p>
+            <input type="radio" id="interes-futuro-si" name="interes-futuro-capacitacion" value="Sí">
+            <label for="interes-futuro-si">Sí</label><br>
+            <input type="radio" id="interes-futuro-no" name="interes-futuro-capacitacion" value="No">
+            <label for="interes-futuro-no">No</label><br>
+
+            <p>16. ¿Cuál es el principal motivo de rotación de empleados en la empresa?</p>
+            <input type="radio" id="mejores-oportunidades" name="motivo-rotacion"
+                value="Mejores oportunidades laborales en otras empresas">
+            <label for="mejores-oportunidades">Mejores oportunidades laborales en otras empresas.</label><br>
+            <input type="radio" id="falta-crecimiento" name="motivo-rotacion"
+                value="Falta de oportunidades de crecimiento y desarrollo">
+            <label for="falta-crecimiento">Falta de oportunidades de crecimiento y desarrollo.</label><br>
+            <input type="radio" id="problemas-compensacion" name="motivo-rotacion"
+                value="Problemas de compensación y beneficios">
+            <label for="problemas-compensacion">Problemas de compensación y beneficios.</label><br>
+            <label for="otro-motivo-rotacion">Otro:</label>
+            <input type="text" id="otro-motivo-rotacion" name="motivo-rotacion"><br>
+
+            <p>17. ¿Cómo describirías la cultura de tu empresa respecto al apoyo del espíritu emprendedor y la
+                experimentación?</p>
+            <input type="radio" id="fomenta-experimentacion" name="cultura-emprendimiento"
+                value="Fomentamos activamente la experimentación y el espíritu emprendedor">
+            <label for="fomenta-experimentacion">Fomentamos activamente la experimentación y el espíritu
+                emprendedor.</label><br>
+            <input type="radio" id="cultura-conservadora" name="cultura-emprendimiento"
+                value="La cultura de la empresa es más conservadora y menos orientada hacia la experimentación">
+            <label for="cultura-conservadora">La cultura de la empresa es más conservadora y menos orientada hacia la
+                experimentación.</label><br>
+            <input type="radio" id="no-seguros-percepcion" name="cultura-emprendimiento"
+                value="No estamos seguros de cómo se percibe internamente">
+            <label for="no-seguros-percepcion">No estamos seguros de cómo se percibe internamente.</label><br>
+
+            <p>18. ¿Cómo describirías la cultura organizacional de tu empresa?</p>
+            <input type="radio" id="cultura-innovadora" name="cultura-organizacional"
+                value="Innovadora: Una cultura que fomenta la experimentación, la creatividad y la búsqueda de nuevas ideas y enfoques">
+            <label for="cultura-innovadora">Innovadora: Una cultura que fomenta la experimentación, la creatividad y la
+                búsqueda de nuevas ideas y enfoques.</label><br>
+            <input type="radio" id="cultura-tradicional" name="cultura-organizacional"
+                value="Tradicional: Una cultura arraigada en prácticas y valores establecidos, con énfasis en la estabilidad y la continuidad">
+            <label for="cultura-tradicional">Tradicional: Una cultura arraigada en prácticas y valores establecidos, con
+                énfasis en la estabilidad y la continuidad.</label><br>
+            <input type="radio" id="cultura-colaborativa" name="cultura-organizacional"
+                value="Colaborativa: Una cultura que promueve la cooperación, el trabajo en equipo y la participación activa de todos los empleados">
+            <label for="cultura-colaborativa">Colaborativa: Una cultura que promueve la cooperación, el trabajo en
+                equipo y la participación activa de todos los empleados.</label><br>
+            <input type="radio" id="cultura-jerarquica" name="cultura-organizacional"
+                value="Jerárquica: Una cultura en la que la toma de decisiones y la autoridad se concentran en la alta dirección y se sigue una estructura organizativa claramente definida">
+            <label for="cultura-jerarquica">Jerárquica: Una cultura en la que la toma de decisiones y la autoridad se
+                concentran en la alta dirección y se sigue una estructura organizativa claramente definida.</label><br>
+            <label for="otra-cultura">Otro:</label>
+            <input type="text" id="otra-cultura" name="cultura-organizacional"><br>
+
+            <p>19. ¿En general cómo calificaría la colaboración entre los diferentes equipos y áreas de trabajo de la
+                empresa?</p>
+            <input type="radio" id="nada-colaborativa" name="colaboracion-equipos" value="Nada colaborativa">
+            <label for="nada-colaborativa">Nada colaborativa</label><br>
+            <input type="radio" id="poco-colaborativa" name="colaboracion-equipos" value="Poco colaborativa">
+            <label for="poco-colaborativa">Poco colaborativa</label><br>
+            <input type="radio" id="algo-colaborativa" name="colaboracion-equipos" value="Algo colaborativa">
+            <label for="algo-colaborativa">Algo colaborativa</label><br>
+            <input type="radio" id="muy-colaborativa" name="colaboracion-equipos" value="Muy colaborativa">
+            <label for="muy-colaborativa">Muy colaborativa</label><br>
+
+            <p>20. ¿Qué proporción de empleados ocupa posiciones de liderazgo en función de su género?</p>
+            <input type="radio" id="mayoria-hombres" name="proporcion-lideres-genero"
+                value="Mayoría de líderes son hombres">
+            <label for="mayoria-hombres">Mayoría de líderes son hombres</label><br>
+            <input type="radio" id="mayoria-mujeres" name="proporcion-lideres-genero"
+                value="Mayoría de líderes son mujeres">
+            <label for="mayoria-mujeres">Mayoría de líderes son mujeres</label><br>
+            <input type="radio" id="proporcion-equitativa" name="proporcion-lideres-genero"
+                value="Proporción equitativa de líderes hombres y mujeres">
+            <label for="proporcion-equitativa">Proporción equitativa de líderes hombres y mujeres</label><br>
+            <label for="otra-proporcion-genero">Otro:</label>
+            <input type="text" id="otra-proporcion-genero" name="proporcion-lideres-genero"><br>
+
+            <p>21. ¿La empresa tiene una estrategia formal para fomentar la innovación mediante la colaboración?</p>
+            <input type="radio" id="estrategia-formal-si" name="estrategia-colaboracion"
+                value="Sí, contamos con una estrategia formal y documentada">
+            <label for="estrategia-formal-si">Sí, contamos con una estrategia formal y documentada.</label><br>
+            <input type="radio" id="estrategia-desarrollo" name="estrategia-colaboracion"
+                value="Estamos en proceso de desarrollo de una estrategia">
+            <label for="estrategia-desarrollo">Estamos en proceso de desarrollo de una estrategia.</label><br>
+            <input type="radio" id="estrategia-no-definida" name="estrategia-colaboracion"
+                value="No tenemos una estrategia definida en este momento">
+            <label for="estrategia-no-definida">No tenemos una estrategia definida en este momento.</label><br>
+
+            <p>22. ¿Crees que tu empresa está a la vanguardia en innovación en comparación con tus competidores?</p>
+            <input type="radio" id="vanguardia-si" name="vanguardia-innovacion" value="Sí, estamos por delante">
+            <label for="vanguardia-si">Sí, estamos por delante</label><br>
+            <input type="radio" id="vanguardia-igual" name="vanguardia-innovacion" value="Si, estamos a la par">
+            <label for="vanguardia-igual">Si, estamos a la par</label><br>
+            <input type="radio" id="vanguardia-no" name="vanguardia-innovacion"
+                value="No, nuestros competidores están por delante">
+            <label for="vanguardia-no">No, nuestros competidores están por delante</label><br>
+            <input type="radio" id="vanguardia-no-seguro" name="vanguardia-innovacion" value="No estoy seguro/a">
+            <label for="vanguardia-no-seguro">No estoy seguro/a</label><br>
+
+            <p>23. Si tuvieras que evaluar la posición de la empresa en innovación, ¿en qué medida la considerarías?</p>
+            <input type="radio" id="muchisimo-hacer" name="posicion-innovacion" value="Muchísimo por hacer">
+            <label for="muchisimo-hacer">Muchísimo por hacer</label><br>
+            <input type="radio" id="bastante-hacer" name="posicion-innovacion" value="Bastante por hacer">
+            <label for="bastante-hacer">Bastante por hacer</label><br>
+            <input type="radio" id="medio-camino" name="posicion-innovacion" value="A medio camino">
+            <label for="medio-camino">A medio camino</label><br>
+            <input type="radio" id="bastante-bien" name="posicion-innovacion" value="Bastante bien">
+            <label for="bastante-bien">Bastante bien</label><br>
+            <input type="radio" id="muy-bien-direccionada" name="posicion-innovacion" value="Muy bien direccionada">
+            <label for="muy-bien-direccionada">Muy bien direccionada</label><br>
+
+            <p>24. ¿A qué cree que se deba su consideración? (Marque a lo mucho 2)</p>
+            <input type="checkbox" id="inversion-continua" name="motivos-consideracion[]" value="Inversión continua">
+            <label for="inversion-continua">Inversión continua</label><br>
+            <input type="checkbox" id="adopcion-tecnologia" name="motivos-consideracion[]"
+                value="Adopción de Tecnología">
+            <label for="adopcion-tecnologia">Adopción de Tecnología</label><br>
+            <input type="checkbox" id="liderazgo-apoyo" name="motivos-consideracion[]"
+                value="Liderazgo y apoyo de la alta dirección">
+            <label for="liderazgo-apoyo">Liderazgo y apoyo de la alta dirección</label><br>
+            <input type="checkbox" id="agilidad-cambios" name="motivos-consideracion[]"
+                value="Ser más ágiles para adaptarse a los cambios de mercado y tendencias">
+            <label for="agilidad-cambios">Ser más ágiles para adaptarse a los cambios de mercado y
+                tendencias</label><br>
+            <input type="checkbox" id="talento-humano" name="motivos-consideracion[]" value="Talento Humano">
+            <label for="talento-humano">Talento Humano</label><br>
+            <label for="otro-motivo-consideracion">Otro:</label>
+            <input type="text" id="otro-motivo-consideracion" name="motivos-consideracion[]"><br>
+
+            <!-- Sección 4: Capacidad del Ecosistema -->
+            <h2>Sección 4: Capacidad del Ecosistema</h2>
+
+            <p>1. ¿Cómo calificaría la respuesta de su empresa ante las oportunidades de innovación?</p>
+            <input type="radio" id="alta-receptividad" name="receptividad-innovacion" value="Alta receptividad">
+            <label for="alta-receptividad">Alta receptividad</label><br>
+            <input type="radio" id="moderada-receptividad" name="receptividad-innovacion" value="Receptividad moderada">
+            <label for="moderada-receptividad">Receptividad moderada</label><br>
+            <input type="radio" id="baja-receptividad" name="receptividad-innovacion" value="Baja receptividad">
+            <label for="baja-receptividad">Baja receptividad</label><br>
+
+            <p>2. ¿Cómo se integran los procesos empresariales para trabajar con socios externos y el ecosistema?</p>
+            <input type="radio" id="no-colaboracion-ecosistema" name="integracion-procesos-ecosistema"
+                value="No se promueve la colaboración con el ecosistema">
+            <label for="no-colaboracion-ecosistema">No se promueve la colaboración con el ecosistema.</label><br>
+            <input type="radio" id="colaboraciones-esporadicas" name="integracion-procesos-ecosistema"
+                value="Existen colaboraciones esporádicas">
+            <label for="colaboraciones-esporadicas">Existen colaboraciones esporádicas.</label><br>
+            <input type="radio" id="colaboracion-estandarizada" name="integracion-procesos-ecosistema"
+                value="La colaboración está estandarizada en procesos clave">
+            <label for="colaboracion-estandarizada">La colaboración está estandarizada en procesos clave.</label><br>
+            <input type="radio" id="colaboracion-integrada-evaluada" name="integracion-procesos-ecosistema"
+                value="La colaboración está integrada en procesos clave y se evalúa su impacto">
+            <label for="colaboracion-integrada-evaluada">La colaboración está integrada en procesos clave y se evalúa su
+                impacto.</label><br>
+            <input type="radio" id="colaboracion-continua-mejoras" name="integracion-procesos-ecosistema"
+                value="Se promueve la colaboración continua con mejoras constantes">
+            <label for="colaboracion-continua-mejoras">Se promueve la colaboración continua con mejoras
+                constantes.</label><br>
+
+            <p>3. ¿Su empresa valora formalmente el impacto potencial de las iniciativas impulsadas por startups y
+                evalúa las oportunidades de colaboración con ellas?</p>
+            <input type="radio" id="valora-impacto-proceso" name="valoracion-impacto-startups"
+                value="Sí, con un proceso definido">
+            <label for="valora-impacto-proceso">Sí, con un proceso definido.</label><br>
+            <input type="radio" id="valora-impacto-sin-proceso" name="valoracion-impacto-startups"
+                value="Sí, (sin un proceso establecido)">
+            <label for="valora-impacto-sin-proceso">Sí, (sin un proceso establecido)</label><br>
+            <input type="radio" id="no-valora-impacto" name="valoracion-impacto-startups" value="No">
+            <label for="no-valora-impacto">No</label><br>
+            <p>4. ¿Ha implementado su empresa alguna de las siguientes iniciativas de innovación abierta?</p> <input
+                type="checkbox" id="desafios-concursos" name="iniciativas-innovacion-abierta[]"
+                value="Desafíos/concursos de innovación abiertos"> <label for="desafios-concursos">Desafíos/concursos de
+                innovación abiertos</label><br> <input type="checkbox" id="hackatones"
+                name="iniciativas-innovacion-abierta[]" value="Hackatones/maratones de programación"> <label
+                for="hackatones">Hackatones/maratones de programación</label><br> <input type="checkbox"
+                id="crowdsourcing-crowdfunding" name="iniciativas-innovacion-abierta[]"
+                value="Campañas de crowdsourcing/crowdfunding"> <label for="crowdsourcing-crowdfunding">Campañas de
+                crowdsourcing/crowdfunding</label><br> <input type="checkbox" id="plataformas-colaborativas"
+                name="iniciativas-innovacion-abierta[]" value="Plataformas de labor market/trabajo colaborativo"> <label
+                for="plataformas-colaborativas">Plataformas de labor market/trabajo colaborativo</label><br> <label
+                for="otra-iniciativa-abierta">Otro:</label> <input type="text" id="otra-iniciativa-abierta"
+                name="iniciativas-innovacion-abierta[]"><br> <input type="checkbox" id="ninguna-iniciativa-abierta"
+                name="iniciativas-innovacion-abierta[]" value="Ninguna de las anteriores"> <label
+                for="ninguna-iniciativa-abierta">Ninguna de las anteriores</label><br>
+            <p>5. Durante los años 2021 a 2023, ¿qué organizaciones colaboraron con su empresa en actividades de
+                innovación para el desarrollo de productos o procesos? En caso afirmativo, ¿cuál fue el propósito de
+                esta colaboración?</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Actor</th>
+                        <th>Frecuencia*</th>
+                        <th>I+D (Investigación y Desarrollo)</th>
+                        <th>Ingeniería y Diseño</th>
+                        <th>Capacitación</th>
+                        <th>Asistencia técnica</th>
+                        <th>RSC</th>
+                        <th>Pruebas de productos</th>
+                        <th>Financiamiento</th>
+                        <th>Exposición de Marca</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a. Clientes y consumidores</td>
+                        <td>
+                            <select name="frecuencia-clientes">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="clientes-id"></td>
+                        <td><input type="checkbox" name="clientes-ingenieria"></td>
+                        <td><input type="checkbox" name="clientes-capacitacion"></td>
+                        <td><input type="checkbox" name="clientes-asistencia"></td>
+                        <td><input type="checkbox" name="clientes-rsc"></td>
+                        <td><input type="checkbox" name="clientes-pruebas"></td>
+                        <td><input type="checkbox" name="clientes-financiamiento"></td>
+                        <td><input type="checkbox" name="clientes-marca"></td>
+                    </tr>
+                    <tr>
+                        <td>b. Competidores</td>
+                        <td>
+                            <select name="frecuencia-competidores">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="competidores-id"></td>
+                        <td><input type="checkbox" name="competidores-ingenieria"></td>
+                        <td><input type="checkbox" name="competidores-capacitacion"></td>
+                        <td><input type="checkbox" name="competidores-asistencia"></td>
+                        <td><input type="checkbox" name="competidores-rsc"></td>
+                        <td><input type="checkbox" name="competidores-pruebas"></td>
+                        <td><input type="checkbox" name="competidores-financiamiento"></td>
+                        <td><input type="checkbox" name="competidores-marca"></td>
+                    </tr>
+                    <tr>
+                        <td>c. Proveedores</td>
+                        <td>
+                            <select name="frecuencia-proveedores">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="proveedores-id"></td>
+                        <td><input type="checkbox" name="proveedores-ingenieria"></td>
+                        <td><input type="checkbox" name="proveedores-capacitacion"></td>
+                        <td><input type="checkbox" name="proveedores-asistencia"></td>
+                        <td><input type="checkbox" name="proveedores-rsc"></td>
+                        <td><input type="checkbox" name="proveedores-pruebas"></td>
+                        <td><input type="checkbox" name="proveedores-financiamiento"></td>
+                        <td><input type="checkbox" name="proveedores-marca"></td>
+                    </tr>
+                    <tr>
+                        <td>d. Consultores</td>
+                        <td>
+                            <select name="frecuencia-consultores">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="consultores-id"></td>
+                        <td><input type="checkbox" name="consultores-ingenieria"></td>
+                        <td><input type="checkbox" name="consultores-capacitacion"></td>
+                        <td><input type="checkbox" name="consultores-asistencia"></td>
+                        <td><input type="checkbox" name="consultores-rsc"></td>
+                        <td><input type="checkbox" name="consultores-pruebas"></td>
+                        <td><input type="checkbox" name="consultores-financiamiento"></td>
+                        <td><input type="checkbox" name="consultores-marca"></td>
+                    </tr>
+                    <tr>
+                        <td>e. Universidades</td>
+                        <td>
+                            <select name="frecuencia-universidades">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="universidades-id"></td>
+                        <td><input type="checkbox" name="universidades-ingenieria"></td>
+                        <td><input type="checkbox" name="universidades-capacitacion"></td>
+                        <td><input type="checkbox" name="universidades-asistencia"></td>
+                        <td><input type="checkbox" name="universidades-rsc"></td>
+                        <td><input type="checkbox" name="universidades-pruebas"></td>
+                        <td><input type="checkbox" name="universidades-financiamiento"></td>
+                        <td><input type="checkbox" name="universidades-marca"></td>
+                    </tr>
+                    <tr>
+                        <td>f. Laboratorios/Empresas de I+D</td>
+                        <td>
+                            <select name="frecuencia-laboratorios">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="laboratorios-id"></td>
+                        <td><input type="checkbox" name="laboratorios-ingenieria"></td>
+                        <td><input type="checkbox" name="laboratorios-capacitacion"></td>
+                        <td><input type="checkbox" name="laboratorios-asistencia"></td>
+                        <td><input type="checkbox" name="laboratorios-rsc"></td>
+                        <td><input type="checkbox" name="laboratorios-pruebas"></td>
+                        <td><input type="checkbox" name="laboratorios-financiamiento"></td>
+                        <td><input type="checkbox" name="laboratorios-marca"></td>
+                    </tr>
+                    <tr>
+                        <td>g. Oficina de propiedad intelectual</td>
+                        <td>
+                            <select name="frecuencia-propiedad-intelectual">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="propiedad-intelectual-id"></td>
+                        <td><input type="checkbox" name="propiedad-intelectual-ingenieria"></td>
+                        <td><input type="checkbox" name="propiedad-intelectual-capacitacion"></td>
+                        <td><input type="checkbox" name="propiedad-intelectual-asistencia"></td>
+                        <td><input type="checkbox" name="propiedad-intelectual-rsc"></td>
+                        <td><input type="checkbox" name="propiedad-intelectual-pruebas"></td>
+                        <td><input type="checkbox" name="propiedad-intelectual-financiamiento"></td>
+                        <td><input type="checkbox" name="propiedad-intelectual-marca"></td>
+                    </tr>
+                    <tr>
+                        <td>h. Otras empresas relacionadas</td>
+                        <td>
+                            <select name="frecuencia-otras-empresas">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="otras-empresas-id"></td>
+                        <td><input type="checkbox" name="otras-empresas-ingenieria"></td>
+                        <td><input type="checkbox" name="otras-empresas-capacitacion"></td>
+                        <td><input type="checkbox" name="otras-empresas-asistencia"></td>
+                        <td><input type="checkbox" name="otras-empresas-rsc"></td>
+                        <td><input type="checkbox" name="otras-empresas-pruebas"></td>
+                        <td><input type="checkbox" name="otras-empresas-financiamiento"></td>
+                        <td><input type="checkbox" name="otras-empresas-marca"></td>
+                    </tr>
+                    <tr>
+                        <td>i. Otras empresas del grupo o casa matriz</td>
+                        <td>
+                            <select name="frecuencia-empresas-grupo">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="empresas-grupo-id"></td>
+                        <td><input type="checkbox" name="empresas-grupo-ingenieria"></td>
+                        <td><input type="checkbox" name="empresas-grupo-capacitacion"></td>
+                        <td><input type="checkbox" name="empresas-grupo-asistencia"></td>
+                        <td><input type="checkbox" name="empresas-grupo-rsc"></td>
+                        <td><input type="checkbox" name="empresas-grupo-pruebas"></td>
+                        <td><input type="checkbox" name="empresas-grupo-financiamiento"></td>
+                        <td><input type="checkbox" name="empresas-grupo-marca"></td>
+                    </tr>
+                    <tr>
+                        <td>j. Startups</td>
+                        <td>
+                            <select name="frecuencia-startups">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="startups-id"></td>
+                        <td><input type="checkbox" name="startups-ingenieria"></td>
+                        <td><input type="checkbox" name="startups-capacitacion"></td>
+                        <td><input type="checkbox" name="startups-asistencia"></td>
+                        <td><input type="checkbox" name="startups-rsc"></td>
+                        <td><input type="checkbox" name="startups-pruebas"></td>
+                        <td><input type="checkbox" name="startups-financiamiento"></td>
+                        <td><input type="checkbox" name="startups-marca"></td>
+                    </tr>
+                    <tr>
+                        <td>k. Gobierno</td>
+                        <td>
+                            <select name="frecuencia-gobierno">
+                                <option value="0">Nunca</option>
+                                <option value="1">Rara vez (cada varios años)</option>
+                                <option value="2">Ocasionalmente (algunas veces al año)</option>
+                                <option value="3">Frecuentemente (al menos una vez entre 1 a 3 meses)</option>
+                            </select>
+                        </td>
+                        <td><input type="checkbox" name="gobierno-id"></td>
+                        <td><input type="checkbox" name="gobierno-ingenieria"></td>
+                        <td><input type="checkbox" name="gobierno-capacitacion"></td>
+                        <td><input type="checkbox" name="gobierno-asistencia"></td>
+                        <td><input type="checkbox" name="gobierno-rsc"></td>
+                        <td><input type="checkbox" name="gobierno-pruebas"></td>
+                        <td><input type="checkbox" name="gobierno-financiamiento"></td>
+                        <td><input type="checkbox" name="gobierno-marca"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>6. Detalle el nombre específico de las instituciones públicas o privadas con las que haya realizado
+                alguna relación de innovación.</p>
+            <table>
+                <tr>
+                    <th>Universidades</th>
+                    <th>Privadas</th>
+                    <th>Públicas</th>
+                </tr>
+                <tr>
+                    <td colspan="3"><textarea name="universidades" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <th colspan="3">Gobierno</th>
+                </tr>
+                <tr>
+                    <td colspan="3"><textarea name="gobierno" rows="4"></textarea></td>
+                </tr>
+            </table>
+
+            <p>7. ¿La empresa tiene alianzas o cooperaciones con universidades/centros académicos para fomentar la
+                innovación?</p>
+            <input type="radio" id="alianzas-formales" name="alianzas-universidades"
+                value="Sí, alianzas formales a largo plazo">
+            <label for="alianzas-formales">Sí, alianzas formales a largo plazo</label><br>
+            <input type="radio" id="cooperaciones-puntuales" name="alianzas-universidades"
+                value="Sí, cooperaciones puntuales en proyectos específicos">
+            <label for="cooperaciones-puntuales">Sí, cooperaciones puntuales en proyectos específicos</label><br>
+            <input type="radio" id="explorando-oportunidades" name="alianzas-universidades"
+                value="No, pero estamos explorando oportunidades">
+            <label for="explorando-oportunidades">No, pero estamos explorando oportunidades</label><br>
+            <input type="radio" id="no-cooperado" name="alianzas-universidades"
+                value="No, no hemos cooperado con universidades">
+            <label for="no-cooperado">No, no hemos cooperado con universidades</label><br>
+
+            <!-- Sección 5: Capacidad Interna -->
+            <h2>Sección 5: Capacidad Interna</h2>
+
+            <p>1. Por favor, indique en qué medida está familiarizado con los siguientes conceptos de innovación:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Conceptos</th>
+                        <th>Totalmente desconocido</th>
+                        <th>Poco familiarizado</th>
+                        <th>Algo familiarizado</th>
+                        <th>Bastante familiarizado</th>
+                        <th>Muy familiarizado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a. Innovación Cerrada</td>
+                        <td><input type="radio" name="familiaridad-cerrada" value="1"></td>
+                        <td><input type="radio" name="familiaridad-cerrada" value="2"></td>
+                        <td><input type="radio" name="familiaridad-cerrada" value="3"></td>
+                        <td><input type="radio" name="familiaridad-cerrada" value="4"></td>
+                        <td><input type="radio" name="familiaridad-cerrada" value="5"></td>
+                    </tr>
+                    <tr>
+                        <td>b. Innovación Abierta</td>
+                        <td><input type="radio" name="familiaridad-abierta" value="1"></td>
+                        <td><input type="radio" name="familiaridad-abierta" value="2"></td>
+                        <td><input type="radio" name="familiaridad-abierta" value="3"></td>
+                        <td><input type="radio" name="familiaridad-abierta" value="4"></td>
+                        <td><input type="radio" name="familiaridad-abierta" value="5"></td>
+                    </tr>
+                    <tr>
+                        <td>c. Corporate Venturing</td>
+                        <td><input type="radio" name="familiaridad-venturing" value="1"></td>
+                        <td><input type="radio" name="familiaridad-venturing" value="2"></td>
+                        <td><input type="radio" name="familiaridad-venturing" value="3"></td>
+                        <td><input type="radio" name="familiaridad-venturing" value="4"></td>
+                        <td><input type="radio" name="familiaridad-venturing" value="5"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>2. ¿Cómo se gestiona la innovación dentro de la organización?</p>
+            <input type="radio" id="sin-enfoque-formal" name="gestion-innovacion" value="No hay un enfoque formal">
+            <label for="sin-enfoque-formal">No hay un enfoque formal.</label><br>
+            <input type="radio" id="gestion-proyectos" name="gestion-innovacion"
+                value="Gestión de proyectos a nivel de proyecto">
+            <label for="gestion-proyectos">Gestión de proyectos a nivel de proyecto.</label><br>
+            <input type="radio" id="gestion-programas" name="gestion-innovacion"
+                value="Gestión de programas a nivel de unidad de negocio">
+            <label for="gestion-programas">Gestión de programas a nivel de unidad de negocio.</label><br>
+            <input type="radio" id="gestion-cartera-empresarial" name="gestion-innovacion"
+                value="Gestión de cartera a nivel empresarial">
+            <label for="gestion-cartera-empresarial">Gestión de cartera a nivel empresarial.</label><br>
+            <input type="radio" id="gestion-cartera-integrada" name="gestion-innovacion"
+                value="Gestión de cartera integrada en los flujos de trabajo en tiempo real">
+            <label for="gestion-cartera-integrada">Gestión de cartera integrada en los flujos de trabajo en tiempo
+                real.</label><br>
+
+            <p>3. ¿Cómo se capacita a los empleados para ejecutar/desarrollar innovación?</p>
+            <input type="radio" id="sin-capacitacion-formal" name="capacitacion-innovacion"
+                value="No hay capacitación formal">
+            <label for="sin-capacitacion-formal">No hay capacitación formal.</label><br>
+            <input type="radio" id="capacitacion-minima" name="capacitacion-innovacion"
+                value="Capacitación mínima basada en la experiencia">
+            <label for="capacitacion-minima">Capacitación mínima basada en la experiencia.</label><br>
+            <input type="radio" id="capacitacion-pautas-proyecto" name="capacitacion-innovacion"
+                value="Capacitación con pautas específicas para proyectos">
+            <label for="capacitacion-pautas-proyecto">Capacitación con pautas específicas para proyectos.</label><br>
+            <input type="radio" id="capacitacion-pautas-empresariales" name="capacitacion-innovacion"
+                value="Capacitación con pautas a nivel empresarial">
+            <label for="capacitacion-pautas-empresariales">Capacitación con pautas a nivel empresarial.</label><br>
+            <input type="radio" id="aprendizaje-continuo" name="capacitacion-innovacion"
+                value="Procesos formales de aprendizaje continuo y compartimiento de conocimientos">
+            <label for="aprendizaje-continuo">Procesos formales de aprendizaje continuo y compartimiento de
+                conocimientos.</label><br>
+
+            <p>4. ¿Cómo describiría las habilidades de los empleados que realizan innovación?</p>
+            <input type="radio" id="habilidades-limitadas" name="habilidades-empleados" value="Habilidades limitadas">
+            <label for="habilidades-limitadas">Habilidades limitadas.</label><br>
+            <input type="radio" id="habilidades-fundamentales" name="habilidades-empleados"
+                value="Habilidades fundamentales">
+            <label for="habilidades-fundamentales">Habilidades fundamentales.</label><br>
+            <input type="radio" id="habilidades-aplicar" name="habilidades-empleados"
+                value="Habilidades para aplicar innovación">
+            <label for="habilidades-aplicar">Habilidades para aplicar innovación.</label><br>
+            <input type="radio" id="habilidades-mejorar" name="habilidades-empleados"
+                value="Habilidades para mejorar la innovación">
+            <label for="habilidades-mejorar">Habilidades para mejorar la innovación.</label><br>
+            <input type="radio" id="habilidades-avanzadas" name="habilidades-empleados"
+                value="Conocimiento avanzado de herramientas y prácticas de innovación">
+            <label for="habilidades-avanzadas">Conocimiento avanzado de herramientas y prácticas de
+                innovación.</label><br>
+
+            <p>5. ¿Cuáles son las principales fuentes de financiamiento para las iniciativas de innovación en su
+                empresa?</p>
+            <input type="checkbox" id="financiamiento-interno" name="fuentes-financiamiento[]"
+                value="Recursos financieros internos exclusivamente">
+            <label for="financiamiento-interno">Recursos financieros internos exclusivamente.</label><br>
+            <input type="checkbox" id="financiamiento-publico-privado-local" name="fuentes-financiamiento[]"
+                value="Apoyo interinstitucional público y privado local">
+            <label for="financiamiento-publico-privado-local">Apoyo interinstitucional público y privado
+                local.</label><br>
+            <input type="checkbox" id="financiamiento-academia" name="fuentes-financiamiento[]"
+                value="Colaboración con la academia universitaria">
+            <label for="financiamiento-academia">Colaboración con la academia universitaria.</label><br>
+            <input type="checkbox" id="inversion-startups" name="fuentes-financiamiento[]"
+                value="Inversión en startups y emprendimientos locales">
+            <label for="inversion-startups">Inversión en startups y emprendimientos locales.</label><br>
+            <input type="checkbox" id="apoyo-internacional" name="fuentes-financiamiento[]"
+                value="Apoyo internacional a través de fondos o programas de cooperación">
+            <label for="apoyo-internacional">Apoyo internacional a través de fondos o programas de
+                cooperación.</label><br>
+            <label for="otras-fuentes-financiamiento">Otras fuentes:</label>
+            <input type="text" id="otras-fuentes-financiamiento" name="fuentes-financiamiento[]"><br>
+
+            <p>6. ¿Qué porcentaje de sus iniciativas de innovación proviene de financiamiento externo versus recursos
+                internos?</p>
+            <input type="radio" id="recursos-internos" name="porcentaje-financiamiento"
+                value="Mayoritariamente recursos internos">
+            <label for="recursos-internos">Mayoritariamente recursos internos.</label><br>
+            <input type="radio" id="equilibrio-interno-externo" name="porcentaje-financiamiento"
+                value="Equilibrio entre recursos internos y externos">
+            <label for="equilibrio-interno-externo">Equilibrio entre recursos internos y externos.</label><br>
+            <input type="radio" id="financiamiento-externo" name="porcentaje-financiamiento"
+                value="Mayoritariamente financiamiento externo">
+            <label for="financiamiento-externo">Mayoritariamente financiamiento externo.</label><br>
+
+            <p>7. ¿Cómo valora la efectividad de las alianzas público-privadas en el impulso de la innovación en su
+                empresa?</p>
+            <input type="radio" id="alianzas-no-establecidas" name="efectividad-alianzas-publico-privadas"
+                value="No hemos establecido alianzas público-privadas">
+            <label for="alianzas-no-establecidas">No hemos establecido alianzas público-privadas.</label><br>
+            <input type="radio" id="impacto-limitado-alianzas" name="efectividad-alianzas-publico-privadas"
+                value="Las alianzas han tenido un impacto limitado en nuestra innovación">
+            <label for="impacto-limitado-alianzas">Las alianzas han tenido un impacto limitado en nuestra
+                innovación.</label><br>
+            <input type="radio" id="alianzas-beneficiosas" name="efectividad-alianzas-publico-privadas"
+                value="Las alianzas han sido beneficiosas pero podrían mejorar">
+            <label for="alianzas-beneficiosas">Las alianzas han sido beneficiosas pero podrían mejorar.</label><br>
+            <input type="radio" id="alianzas-integrales" name="efectividad-alianzas-publico-privadas"
+                value="Las alianzas son una parte integral de nuestra estrategia de innovación">
+            <label for="alianzas-integrales">Las alianzas son una parte integral de nuestra estrategia de
+                innovación.</label><br>
+
+            <p>8. ¿Qué tan frecuentemente colabora su empresa con startups o emprendimientos locales para impulsar la
+                innovación?</p>
+            <input type="radio" id="colaboracion-startups-nunca" name="frecuencia-colaboracion-startups"
+                value="Nunca colaboramos con startups">
+            <label for="colaboracion-startups-nunca">Nunca colaboramos con startups.</label><br>
+            <input type="radio" id="colaboracion-startups-ocasional" name="frecuencia-colaboracion-startups"
+                value="Colaboramos ocasionalmente en proyectos específicos">
+            <label for="colaboracion-startups-ocasional">Colaboramos ocasionalmente en proyectos
+                específicos.</label><br>
+            <input type="radio" id="colaboracion-startups-recurrente" name="frecuencia-colaboracion-startups"
+                value="Mantenemos colaboraciones recurrentes con startups">
+            <label for="colaboracion-startups-recurrente">Mantenemos colaboraciones recurrentes con
+                startups.</label><br>
+            <input type="radio" id="estrategia-startups-solida" name="frecuencia-colaboracion-startups"
+                value="Tenemos una estrategia sólida de colaboración con startups y emprendimientos locales">
+            <label for="estrategia-startups-solida">Tenemos una estrategia sólida de colaboración con startups y
+                emprendimientos locales.</label><br>
+
+            <p>9. ¿Cómo tu empresa promueve la innovación en productos o servicios para satisfacer las necesidades
+                cambiantes del mercado?</p>
+            <input type="checkbox" id="creacion-productos-servicios" name="promocion-innovacion[]"
+                value="A través de la creación de nuevos productos o servicios"> <label
+                for="creacion-productos-servicios">A través de la creación de nuevos productos o servicios.</label><br>
+            <input type="checkbox" id="mejorando-productos-servicios" name="promocion-innovacion[]"
+                value="Mejorando los productos o servicios existentes"> <label
+                for="mejorando-productos-servicios">Mejorando los productos o servicios existentes.</label><br> <input
+                type="checkbox" id="explorando-mercados" name="promocion-innovacion[]"
+                value="Explorando nuevos mercados para productos o servicios actuales"> <label
+                for="explorando-mercados">Explorando nuevos mercados para productos o servicios actuales.</label><br>
+            <label for="otra-promocion-innovacion">Otro:</label> <input type="text" id="otra-promocion-innovacion"
+                name="promocion-innovacion[]"><br>
+            <p>10. ¿Qué estrategias implementa tu empresa para innovar en los procesos de producción o entrega de
+                productos/servicios?</p>
+            <input type="checkbox" id="automatizando-procesos" name="estrategias-innovacion-procesos[]"
+                value="Automatizando procesos clave">
+            <label for="automatizando-procesos">Automatizando procesos clave.</label><br>
+            <input type="checkbox" id="optimizando-cadena-suministro" name="estrategias-innovacion-procesos[]"
+                value="Optimizando la cadena de suministro">
+            <label for="optimizando-cadena-suministro">Optimizando la cadena de suministro.</label><br>
+            <input type="checkbox" id="mejorando-eficiencia-operativa" name="estrategias-innovacion-procesos[]"
+                value="Mejorando la eficiencia operativa">
+            <label for="mejorando-eficiencia-operativa">Mejorando la eficiencia operativa.</label><br>
+            <input type="checkbox" id="nuevas-tecnologias-produccion" name="estrategias-innovacion-procesos[]"
+                value="Implementando nuevas tecnologías en la producción">
+            <label for="nuevas-tecnologias-produccion">Implementando nuevas tecnologías en la producción.</label><br>
+            <label for="otra-estrategia-innovacion-procesos">Otro:</label>
+            <input type="text" id="otra-estrategia-innovacion-procesos" name="estrategias-innovacion-procesos[]"><br>
+
+            <p>11. ¿Ha implementado su empresa alguna de las siguientes iniciativas de innovación cerrada o interna en
+                los últimos 3 años?</p>
+            <input type="checkbox" id="retos-innovacion-colaboradores" name="iniciativas-innovacion-cerrada[]"
+                value="Retos de innovación para colaboradores">
+            <label for="retos-innovacion-colaboradores">Retos de innovación para colaboradores</label><br>
+            <input type="checkbox" id="hackathones-internos" name="iniciativas-innovacion-cerrada[]"
+                value="Hackathones de innovación al interno">
+            <label for="hackathones-internos">Hackathones de innovación al interno</label><br>
+            <input type="checkbox" id="laboratorios-innovacion" name="iniciativas-innovacion-cerrada[]"
+                value="Laboratorios de innovación o labs internos">
+            <label for="laboratorios-innovacion">Laboratorios de innovación o "labs" internos</label><br>
+            <input type="checkbox" id="incubadoras-ideas" name="iniciativas-innovacion-cerrada[]"
+                value="Incubadoras de ideas para desarrollo de prototipos">
+            <label for="incubadoras-ideas">Incubadoras de ideas para desarrollo de prototipos</label><br>
+            <input type="checkbox" id="gestion-ideas-sugerencias" name="iniciativas-innovacion-cerrada[]"
+                value="Espacios para la gestión de ideas y sugerencias">
+            <label for="gestion-ideas-sugerencias">Espacios para la gestión de ideas y sugerencias</label><br>
+            <label for="otra-iniciativa-cerrada">Otro:</label>
+            <input type="text" id="otra-iniciativa-cerrada" name="iniciativas-innovacion-cerrada[]"><br>
+            <input type="checkbox" id="ninguna-iniciativa-cerrada" name="iniciativas-innovacion-cerrada[]"
+                value="Ninguno">
+            <label for="ninguna-iniciativa-cerrada">Ninguno</label><br>
+
+            <p>12. En caso de no haber implementado este tipo de actividades, ¿cuál ha sido el principal motivo?:</p>
+            <input type="radio" id="desconocimiento-practicas" name="motivo-no-implementacion"
+                value="Desconocimiento de estas prácticas">
+            <label for="desconocimiento-practicas">Desconocimiento de estas prácticas</label><br>
+            <input type="radio" id="falta-recursos" name="motivo-no-implementacion"
+                value="Falta de recursos (presupuesto, tiempo, personal)">
+            <label for="falta-recursos">Falta de recursos (presupuesto, tiempo, personal)</label><br>
+            <input type="radio" id="falta-estructura-procesos" name="motivo-no-implementacion"
+                value="Falta de estructura y procesos definidos">
+            <label for="falta-estructura-procesos">Falta de estructura y procesos definidos</label><br>
+            <input type="radio" id="no-prioridad-implementacion" name="motivo-no-implementacion"
+                value="No se ha considerado una prioridad">
+            <label for="no-prioridad-implementacion">No se ha considerado una prioridad</label><br>
+            <label for="otro-motivo-no-implementacion">Otro:</label>
+            <input type="text" id="otro-motivo-no-implementacion" name="motivo-no-implementacion"><br>
+
+            <p>13. ¿Estaría su empresa interesada en implementar actividades de innovación cerrada o desafíos internos
+                en el futuro cercano?</p>
+            <input type="radio" id="interes-futuro-cerrada-si" name="interes-futuro-cerrada" value="Sí">
+            <label for="interes-futuro-cerrada-si">Sí</label><br>
+            <input type="radio" id="interes-futuro-cerrada-no" name="interes-futuro-cerrada" value="No">
+            <label for="interes-futuro-cerrada-no">No</label><br>
+
+            <p>14. ¿La empresa cuenta actualmente con patentes registradas o en proceso de registro?</p>
+            <input type="radio" id="patentes-registradas-si" name="patentes-registradas"
+                value="Sí, la empresa cuenta con patentes registradas">
+            <label for="patentes-registradas-si">Sí, la empresa cuenta con patentes registradas.</label><br>
+            <input type="radio" id="patentes-registradas-no" name="patentes-registradas"
+                value="No, la empresa no cuenta con patentes registradas">
+            <label for="patentes-registradas-no">No, la empresa no cuenta con patentes registradas.</label><br>
+            <label for="otra-situacion-patentes">Otro:</label>
+            <input type="text" id="otra-situacion-patentes" name="patentes-registradas"><br>
+
+            <p>15. ¿Cuántas patentes ha solicitado o registrado la empresa en los últimos tres años?</p>
+            <input type="radio" id="patentes-0" name="cantidad-patentes" value="0">
+            <label for="patentes-0">0</label><br>
+            <input type="radio" id="patentes-1-5" name="cantidad-patentes" value="1-5">
+            <label for="patentes-1-5">1-5</label><br>
+            <input type="radio" id="patentes-6-10" name="cantidad-patentes" value="6-10">
+            <label for="patentes-6-10">6-10</label><br>
+            <input type="radio" id="patentes-mas-10" name="cantidad-patentes" value="Más de 10">
+            <label for="patentes-mas-10">Más de 10</label><br>
+            <label for="otra-cantidad-patentes">Otro:</label>
+            <input type="text" id="otra-cantidad-patentes" name="cantidad-patentes"><br>
+
+            <p>16. ¿Se lleva a cabo algún proceso formal para identificar y proteger la propiedad intelectual de la
+                empresa?</p>
+            <input type="radio" id="proceso-formal-propiedad-si" name="proceso-formal-propiedad"
+                value="Sí, se lleva a cabo un proceso formal">
+            <label for="proceso-formal-propiedad-si">Sí, se lleva a cabo un proceso formal.</label><br>
+            <input type="radio" id="proceso-formal-propiedad-no" name="proceso-formal-propiedad"
+                value="No, no se lleva a cabo ningún proceso formal">
+            <label for="proceso-formal-propiedad-no">No, no se lleva a cabo ningún proceso formal.</label><br>
+            <label for="otro-proceso-propiedad">Otro:</label>
+            <input type="text" id="otro-proceso-propiedad" name="proceso-formal-propiedad"><br>
+
+            <p>17. ¿Cómo se gestionan y se utilizan las patentes dentro de la empresa para impulsar la innovación y
+                generar valor añadido?</p>
+            <input type="radio" id="patentes-impulso-innovacion" name="gestion-patentes"
+                value="Las patentes se utilizan activamente para impulsar la innovación y generar valor">
+            <label for="patentes-impulso-innovacion">Las patentes se utilizan activamente para impulsar la innovación y
+                generar valor.</label><br>
+            <input type="radio" id="patentes-gestion-pasiva" name="gestion-patentes"
+                value="Las patentes se gestionan de manera pasiva, sin un enfoque estratégico definido">
+            <label for="patentes-gestion-pasiva">Las patentes se gestionan de manera pasiva, sin un enfoque estratégico
+                definido.</label><br>
+            <label for="otra-gestion-patentes">Otro:</label>
+            <input type="text" id="otra-gestion-patentes" name="gestion-patentes"><br>
+
+            <p>18. ¿Qué porcentaje aproximado de su presupuesto anual se destina a actividades de Investigación y
+                Desarrollo (I+D)?</p>
+            <input type="radio" id="presupuesto-menos-1" name="porcentaje-presupuesto-id" value="Menos del 1%">
+            <label for="presupuesto-menos-1">Menos del 1%</label><br>
+            <input type="radio" id="presupuesto-1-5" name="porcentaje-presupuesto-id" value="Entre 1% y 5%">
+            <label for="presupuesto-1-5">Entre 1% y 5%</label><br>
+            <input type="radio" id="presupuesto-6-10" name="porcentaje-presupuesto-id" value="Entre 6% y 10%">
+            <label for="presupuesto-6-10">Entre 6% y 10%</label><br>
+            <input type="radio" id="presupuesto-mas-10" name="porcentaje-presupuesto-id" value="Más del 10%">
+            <label for="presupuesto-mas-10">Más del 10%</label><br>
+
+            <p>19. ¿Del 100% de empleados, porcentualmente cómo se distribuye su nivel académico?</p>
+            <label for="nivel-primaria-secundaria">a. Nivel primaria - secundaria:</label>
+            <input type="number" id="nivel-primaria-secundaria" name="nivel-primaria-secundaria" min="0" max="100">%<br>
+            <label for="nivel-universidad">b. Nivel de universidad:</label>
+            <input type="number" id="nivel-universidad" name="nivel-universidad" min="0" max="100">%<br>
+            <label for="nivel-maestria">c. Nivel de maestría:</label>
+            <input type="number" id="nivel-maestria" name="nivel-maestria" min="0" max="100">%<br>
+            <label for="nivel-doctorado">d. Nivel de doctorado:</label>
+            <input type="number" id="nivel-doctorado" name="nivel-doctorado" min="0" max="100">%<br>
+            <label for="otro-nivel-academico">e. Otro:</label>
+            <input type="text" id="otro-nivel-academico" name="otro-nivel-academico">
+            <input type="number" id="porcentaje-otro-nivel" name="porcentaje-otro-nivel" min="0" max="100">%<br>
+
+            <p>20. ¿Qué porcentaje del total de empleados se dedica principalmente a actividades de innovación (I+D,
+                nuevos productos/servicios, (otras capacidades definidas anteriormente)?</p>
+            <input type="radio" id="empleados-innovacion-menos-5" name="porcentaje-empleados-innovacion"
+                value="Menos del 5%">
+            <label for="empleados-innovacion-menos-5">Menos del 5%</label><br>
+            <input type="radio" id="empleados-innovacion-5-10" name="porcentaje-empleados-innovacion"
+                value="Entre 5% y 10%">
+            <label for="empleados-innovacion-5-10">Entre 5% y 10%</label><br>
+            <input type="radio" id="empleados-innovacion-11-20" name="porcentaje-empleados-innovacion"
+                value="Entre 11% y 20%">
+            <label for="empleados-innovacion-11-20">Entre 11% y 20%</label><br>
+            <input type="radio" id="empleados-innovacion-mas-20" name="porcentaje-empleados-innovacion"
+                value="Más del 20%">
+            <label for="empleados-innovacion-mas-20">Más del 20%</label><br>
+
+            <!-- Sección 6: Facilitadores Tecnológicos -->
+            <h2>Sección 6: Facilitadores Tecnológicos</h2>
+
+            <p>1. ¿Qué tecnologías nuevas ha empezado a adoptar su empresa en los últimos tres años?</p>
+            <input type="checkbox" id="tecnologia-ia" name="tecnologias-adoptadas[]" value="Inteligencia artificial">
+            <label for="tecnologia-ia">Inteligencia artificial</label><br>
+            <input type="checkbox" id="tecnologia-bigdata" name="tecnologias-adoptadas[]"
+                value="Big Data - Analítica de Negocios">
+            <label for="tecnologia-bigdata">Big Data - Analítica de Negocios</label><br>
+            <input type="checkbox" id="tecnologia-iot" name="tecnologias-adoptadas[]" value="Internet de las cosas IoT">
+            <label for="tecnologia-iot">Internet de las cosas IoT</label><br>
+            <input type="checkbox" id="tecnologia-robotica" name="tecnologias-adoptadas[]" value="Robótica">
+            <label for="tecnologia-robotica">Robótica</label><br>
+            <input type="checkbox" id="tecnologia-blockchain" name="tecnologias-adoptadas[]" value="Blockchain">
+            <label for="tecnologia-blockchain">Blockchain</label><br>
+            <label for="otras-tecnologias-adoptadas">Otras:</label> <input type="text" id="otras-tecnologias-adoptadas"
+                name="tecnologias-adoptadas[]"><br>
+            <input type="checkbox" id="ninguna-tecnologia" name="tecnologias-adoptadas[]"
+                value="Ninguna de las anteriores">
+            <label for="ninguna-tecnologia">Ninguna de las anteriores</label><br>
+            <p>2. En caso de haber adoptado alguna(s), ¿en qué áreas o procesos de su empresa se han integrado estas
+                tecnologías?</p>
+            <input type="checkbox" id="area-produccion" name="areas-integracion-tecnologias[]"
+                value="Producción/Operaciones">
+            <label for="area-produccion">Producción/Operaciones</label><br>
+            <input type="checkbox" id="area-logistica" name="areas-integracion-tecnologias[]"
+                value="Logística/Cadena de suministro">
+            <label for="area-logistica">Logística/Cadena de suministro</label><br>
+            <input type="checkbox" id="area-mercadeo-ventas" name="areas-integracion-tecnologias[]"
+                value="Mercadeo/Ventas">
+            <label for="area-mercadeo-ventas">Mercadeo/Ventas</label><br>
+            <input type="checkbox" id="area-servicio-cliente" name="areas-integracion-tecnologias[]"
+                value="Servicio al cliente">
+            <label for="area-servicio-cliente">Servicio al cliente</label><br>
+            <label for="otras-areas-integracion">Otras:</label>
+            <input type="text" id="otras-areas-integracion" name="areas-integracion-tecnologias[]"><br>
+
+            <p>3. ¿Ha contratado su empresa alguna consultoría o proyecto digital de innovación en los últimos 3 años?
+            </p>
+            <input type="radio" id="contratado-consultoria-si" name="contratado-consultoria" value="Sí">
+            <label for="contratado-consultoria-si">Sí</label><br>
+            <input type="radio" id="contratado-consultoria-no" name="contratado-consultoria" value="No">
+            <label for="contratado-consultoria-no">No</label><br>
+
+            <p>3.1 Si la respuesta es "Sí", por favor seleccione las opciones que apliquen:</p>
+            <input type="checkbox" id="consultoria-vigilancia" name="tipo-consultoria[]" value="Vigilancia Tecnológica">
+            <label for="consultoria-vigilancia">Vigilancia Tecnológica</label><br>
+            <input type="checkbox" id="consultoria-gestion-innovacion" name="tipo-consultoria[]"
+                value="Gestión de la innovación">
+            <label for="consultoria-gestion-innovacion">Gestión de la innovación</label><br>
+            <input type="checkbox" id="consultoria-productos-servicios" name="tipo-consultoria[]"
+                value="Innovación de productos y servicios">
+            <label for="consultoria-productos-servicios">Innovación de productos y servicios</label><br>
+            <label for="otras-consultorias">Otras:</label>
+            <input type="text" id="otras-consultorias" name="tipo-consultoria[]"><br>
+
+            <p>4. En caso de no haber contratado consultorías o proyectos digitales de innovación, ¿cuál ha sido el
+                principal motivo?</p>
+            <input type="radio" id="desconocimiento-servicios" name="motivo-no-consultoria"
+                value="Desconocimiento de este tipo de servicios">
+            <label for="desconocimiento-servicios">Desconocimiento de este tipo de servicios</label><br>
+            <input type="radio" id="falta-presupuesto-consultoria" name="motivo-no-consultoria"
+                value="Falta de presupuesto">
+            <label for="falta-presupuesto-consultoria">Falta de presupuesto</label><br>
+            <input type="radio" id="falta-personal-capacitado" name="motivo-no-consultoria"
+                value="Falta de personal capacitado">
+            <label for="falta-personal-capacitado">Falta de personal capacitado</label><br>
+            <input type="radio" id="no-prioridad-consultoria" name="motivo-no-consultoria"
+                value="No se ha considerado una prioridad">
+            <label for="no-prioridad-consultoria">No se ha considerado una prioridad</label><br>
+            <label for="otras-razones-no-consultoria">Otras:</label>
+            <input type="text" id="otras-razones-no-consultoria" name="motivo-no-consultoria"><br>
+
+            <p>5. ¿Qué acciones ha tomado su empresa para impulsar la transformación digital y fomentar la innovación
+                empresarial?</p>
+            <input type="checkbox" id="rediseno-procesos-digitalizacion" name="acciones-transformacion-digital[]"
+                value="Rediseño de procesos para su digitalización, lo cual ha permitido mejorar la eficiencia y agilidad de las operaciones y ha impulsado la innovación en la forma en que se realizan las tareas">
+            <label for="rediseno-procesos-digitalizacion">Rediseño de procesos para su digitalización, lo cual ha
+                permitido mejorar la eficiencia y agilidad de las operaciones y ha impulsado la innovación en la forma
+                en que se realizan las tareas.</label><br>
+            <input type="checkbox" id="herramientas-ecommerce" name="acciones-transformacion-digital[]"
+                value="Implementación de herramientas de e-commerce, lo cual ha facilitado la expansión de los canales de venta y ha permitido llegar a nuevos clientes de manera más efectiva">
+            <label for="herramientas-ecommerce">Implementación de herramientas de e-commerce, lo cual ha facilitado la
+                expansión de los canales de venta y ha permitido llegar a nuevos clientes de manera más
+                efectiva.</label><br>
+            <input type="checkbox" id="soluciones-nube" name="acciones-transformacion-digital[]"
+                value="Adopción de soluciones en la nube (cloud), lo cual ha brindado mayor flexibilidad y escalabilidad a los procesos empresariales, además de facilitar el acceso a datos y recursos desde cualquier lugar y en cualquier momento">
+            <label for="soluciones-nube">Adopción de soluciones en la nube (cloud), lo cual ha brindado mayor
+                flexibilidad y escalabilidad a los procesos empresariales, además de facilitar el acceso a datos y
+                recursos desde cualquier lugar y en cualquier momento.</label><br>
+            <input type="checkbox" id="analitica-datos" name="acciones-transformacion-digital[]"
+                value="Utilización de analítica avanzada de datos del cliente/mercado, lo cual ha permitido obtener insights valiosos para la toma de decisiones estratégicas, identificar oportunidades de mejora y personalizar la experiencia del cliente">
+            <label for="analitica-datos">Utilización de analítica avanzada de datos del cliente/mercado, lo cual ha
+                permitido obtener insights valiosos para la toma de decisiones estratégicas, identificar oportunidades
+                de mejora y personalizar la experiencia del cliente.</label><br>
+            <label for="otra-accion-transformacion">Otra:</label>
+            <input type="text" id="otra-accion-transformacion" name="acciones-transformacion-digital[]"><br>
+            <input type="checkbox" id="ninguna-accion-transformacion" name="acciones-transformacion-digital[]"
+                value="Ninguna de las anteriores">
+            <label for="ninguna-accion-transformacion">Ninguna de las anteriores.</label><br>
+
+            <p>6. ¿Qué caracteriza más significativamente la arquitectura-infraestructura tecnológica de su empresa?</p>
+            <input type="radio" id="tecnologia-propietaria-interna" name="caracteristica-arquitectura-tecnologica"
+                value="Uso exclusivo de tecnología propietaria interna">
+            <label for="tecnologia-propietaria-interna">Uso exclusivo de tecnología propietaria interna.</label><br>
+            <input type="radio" id="estandares-abiertos-sin-integracion" name="caracteristica-arquitectura-tecnologica"
+                value="Adopción de estándares abiertos sin integración">
+            <label for="estandares-abiertos-sin-integracion">Adopción de estándares abiertos sin
+                integración.</label><br>
+            <input type="radio" id="estandares-abiertos-integracion" name="caracteristica-arquitectura-tecnologica"
+                value="Adopción de estándares abiertos y cierta integración con socios">
+            <label for="estandares-abiertos-integracion">Adopción de estándares abiertos y cierta integración con
+                socios.</label><br>
+            <input type="radio" id="integracion-tecnologica-socios" name="caracteristica-arquitectura-tecnologica"
+                value="Integración tecnológica y compartición de datos con socios para iniciativas estratégicas">
+            <label for="integracion-tecnologica-socios">Integración tecnológica y compartición de datos con socios para
+                iniciativas estratégicas.</label><br>
+            <input type="radio" id="capacidades-tecnologicas-compartidas" name="caracteristica-arquitectura-tecnologica"
+                value="Capacidades tecnológicas compartidas e integradas con socios">
+            <label for="capacidades-tecnologicas-compartidas">Capacidades tecnológicas compartidas e integradas con
+                socios.</label><br>
+
+            <p>7. ¿Qué nivel de madurez considera que tiene su empresa en cuanto a la adopción e integración de
+                tecnologías habilitadoras para la innovación?</p>
+            <input type="radio" id="nivel-inicial" name="nivel-madurez-tecnologica"
+                value="Inicial - Adopción ad-hoc de tecnologías">
+            <label for="nivel-inicial">Inicial - Adopción ad-hoc de tecnologías</label><br>
+            <input type="radio" id="nivel-repetible" name="nivel-madurez-tecnologica"
+                value="Repetible - Uso básico de algunas tecnologías clave">
+            <label for="nivel-repetible">Repetible - Uso básico de algunas tecnologías clave</label><br>
+            <input type="radio" id="nivel-definido" name="nivel-madurez-tecnologica"
+                value="Definido - Tenemos procesos estandarizados para evaluar e integrar nuevas tecnologías">
+            <label for="nivel-definido">Definido - Tenemos procesos estandarizados para evaluar e integrar nuevas
+                tecnologías</label><br>
+            <input type="radio" id="nivel-administrado" name="nivel-madurez-tecnologica"
+                value="Administrado - Enfoque estratégico y gestión integrada de la adopción tecnológica">
+            <label for="nivel-administrado">Administrado - Enfoque estratégico y gestión integrada de la adopción
+                tecnológica</label><br>
+            <input type="radio" id="nivel-optimizado" name="nivel-madurez-tecnologica"
+                value="Optimizado - Capacidades tecnológicas optimizadas y actualizadas continuamente">
+            <label for="nivel-optimizado">Optimizado - Capacidades tecnológicas optimizadas y actualizadas
+                continuamente</label><br>
+
+            <h2>Resultados e Impactos de la Innovación</h2>
+
+            <p>Si su empresa ha implementado actividades de innovación en los últimos 3 años:</p>
+
+            <p>1. ¿Qué resultados e impactos consideran haber logrado?</p>
+            <input type="checkbox" id="nuevas-ideas-productos-servicios" name="resultados-impactos[]"
+                value="Generación de nuevas ideas de productos/servicios">
+            <label for="nuevas-ideas-productos-servicios">Generación de nuevas ideas de productos/servicios</label><br>
+            <input type="checkbox" id="mejoras-procesos-eficiencia" name="resultados-impactos[]"
+                value="Mejoras en procesos y eficiencia operativa">
+            <label for="mejoras-procesos-eficiencia">Mejoras en procesos y eficiencia operativa</label><br>
+            <input type="checkbox" id="fomento-cultura-innovacion" name="resultados-impactos[]"
+                value="Fomento de la cultura de innovación y creatividad">
+            <label for="fomento-cultura-innovacion">Fomento de la cultura de innovación y creatividad</label><br>
+            <input type="checkbox" id="incremento-motivacion-compromiso" name="resultados-impactos[]"
+                value="Incremento de la motivación y compromiso de los empleados">
+            <label for="incremento-motivacion-compromiso">Incremento de la motivación y compromiso de los
+                empleados</label><br>
+            <input type="checkbox" id="aumento-ingresos-ventas" name="resultados-impactos[]"
+                value="Aumento de ingresos/ventas">
+            <label for="aumento-ingresos-ventas">Aumento de ingresos/ventas</label><br>
+            <input type="checkbox" id="reduccion-costos" name="resultados-impactos[]" value="Reducción de costos">
+            <label for="reduccion-costos">Reducción de costos</label><br>
+            <input type="checkbox" id="desarrollo-productos-servicios-innovadores" name="resultados-impactos[]"
+                value="Desarrollo de nuevos productos/servicios innovadores">
+            <label for="desarrollo-productos-servicios-innovadores">Desarrollo de nuevos productos/servicios
+                innovadores</label><br>
+            <input type="checkbox" id="entrada-nuevos-mercados" name="resultados-impactos[]"
+                value="Entrada a nuevos mercados">
+            <label for="entrada-nuevos-mercados">Entrada a nuevos mercados</label><br>
+            <input type="checkbox" id="desarrollo-nuevas-habilidades" name="resultados-impactos[]"
+                value="Desarrollo de nuevas habilidades del personal">
+            <label for="desarrollo-nuevas-habilidades">Desarrollo de nuevas habilidades del personal</label><br>
+            <label for="otro-resultado-impacto">Otra:</label>
+            <input type="text" id="otro-resultado-impacto" name="resultados-impactos[]"><br>
+
+            <p>2. ¿Qué porcentaje aproximado de los ingresos totales de su empresa en el último año provino de
+                productos/servicios nuevos o mejorados gracias a la innovación?</p>
+            <input type="radio" id="porcentaje-ingresos-menos-10" name="porcentaje-ingresos-innovacion"
+                value="Menos del 10%">
+            <label for="porcentaje-ingresos-menos-10">Menos del 10%</label><br>
+            <input type="radio" id="porcentaje-ingresos-10-25" name="porcentaje-ingresos-innovacion"
+                value="Entre 10% y 25%">
+            <label for="porcentaje-ingresos-10-25">Entre 10% y 25%</label><br>
+            <input type="radio" id="porcentaje-ingresos-26-50" name="porcentaje-ingresos-innovacion"
+                value="Entre 26% y 50%">
+            <label for="porcentaje-ingresos-26-50">En 26% y 50%</label><br> <input type="radio"
+                id="porcentaje-ingresos-mas-50" name="porcentaje-ingresos-innovacion" value="Más del 50%">
+            <label for="porcentaje-ingresos-mas-50">Más del 50%</label><br>
+            <p>3. En los últimos 3 años, ¿en qué medida han impactado las iniciativas de innovación en la reducción de
+                costos operativos?</p>
+            <input type="radio" id="impacto-costos-no-significativo" name="impacto-costos-operativos"
+                value="No han tenido un impacto significativo">
+            <label for="impacto-costos-no-significativo">No han tenido un impacto significativo</label><br>
+            <input type="radio" id="impacto-costos-menores" name="impacto-costos-operativos"
+                value="Han generado ahorros menores (menos del 5%)">
+            <label for="impacto-costos-menores">Han generado ahorros menores (menos del 5%)</label><br>
+            <input type="radio" id="impacto-costos-moderados" name="impacto-costos-operativos"
+                value="Han generado ahorros moderados (5-15%)">
+            <label for="impacto-costos-moderados">Han generado ahorros moderados (5-15%)</label><br>
+            <input type="radio" id="impacto-costos-sustanciales" name="impacto-costos-operativos"
+                value="Han generado ahorros sustanciales (más del 15%)">
+            <label for="impacto-costos-sustanciales">Han generado ahorros sustanciales (más del 15%)</label><br>
+
+            <p>4. ¿Han permitido los esfuerzos de innovación ingresar a nuevos mercados o segmentos?</p>
+            <input type="radio" id="ingreso-varios-mercados" name="ingreso-nuevos-mercados"
+                value="Sí, a varios nuevos mercados/segmentos">
+            <label for="ingreso-varios-mercados">Sí, a varios nuevos mercados/segmentos</label><br>
+            <input type="radio" id="ingreso-algunos-mercados" name="ingreso-nuevos-mercados"
+                value="Sí, a algunos nuevos mercados/segmentos">
+            <label for="ingreso-algunos-mercados">Sí, a algunos nuevos mercados/segmentos</label><br>
+            <input type="radio" id="no-ingreso-mercados" name="ingreso-nuevos-mercados"
+                value="No, nos hemos mantenido en los mismos mercados">
+            <label for="no-ingreso-mercados">No, nos hemos mantenido en los mismos mercados</label><br>
+
+            <p>5. ¿Cómo han impactado las innovaciones en la experiencia y satisfacción del cliente?</p>
+            <input type="radio" id="impacto-experiencia-significativo" name="impacto-experiencia-cliente"
+                value="Han mejorado significativamente la experiencia">
+            <label for="impacto-experiencia-significativo">Han mejorado significativamente la experiencia</label><br>
+            <input type="radio" id="impacto-experiencia-algunas-mejoras" name="impacto-experiencia-cliente"
+                value="Han generado algunas mejoras">
+            <label for="impacto-experiencia-algunas-mejoras">Han generado algunas mejoras</label><br>
+            <input type="radio" id="impacto-experiencia-no-destacable" name="impacto-experiencia-cliente"
+                value="No han tenido un impacto destacable">
+            <label for="impacto-experiencia-no-destacable">No han tenido un impacto destacable</label><br>
+            <input type="radio" id="impacto-experiencia-empeorado" name="impacto-experiencia-cliente"
+                value="Han empeorado la experiencia del cliente">
+            <label for="impacto-experiencia-empeorado">Han empeorado la experiencia del cliente</label><br>
+
+            <p>6. ¿Han permitido las iniciativas de innovación desarrollar nuevos modelos de negocio?</p>
+            <input type="radio" id="nuevos-modelos-disruptivos" name="desarrollo-nuevos-modelos"
+                value="Sí, hemos implementado nuevos modelos disruptivos">
+            <label for="nuevos-modelos-disruptivos">Sí, hemos implementado nuevos modelos disruptivos</label><br>
+            <input type="radio" id="innovaciones-incrementales-modelo" name="desarrollo-nuevos-modelos"
+                value="Sí, hemos realizado innovaciones incrementales sobre nuestro modelo">
+            <label for="innovaciones-incrementales-modelo">Sí, hemos realizado innovaciones incrementales sobre nuestro
+                modelo</label><br>
+            <input type="radio" id="no-nuevo-modelo" name="desarrollo-nuevos-modelos"
+                value="No, mantenemos nuestro modelo de negocio tradicional">
+            <label for="no-nuevo-modelo">No, mantenemos nuestro modelo de negocio tradicional</label><br>
+
+            <p>7. En general, ¿cómo valoraría el impacto de la innovación en el desempeño y la competitividad de su
+                empresa?</p>
+            <input type="radio" id="impacto-transformador" name="valoracion-impacto-innovacion"
+                value="La innovación ha tenido un impacto transformador">
+            <label for="impacto-transformador">La innovación ha tenido un impacto transformador</label><br>
+            <input type="radio" id="impacto-mejoras-relevantes" name="valoracion-impacto-innovacion"
+                value="Ha generado mejoras e impactos positivos relevantes">
+            <label for="impacto-mejoras-relevantes">Ha generado mejoras e impactos positivos relevantes</label><br>
+            <input type="radio" id="impacto-limitado" name="valoracion-impacto-innovacion"
+                value="Ha tenido un impacto limitado hasta ahora">
+            <label for="impacto-limitado">Ha tenido un impacto limitado hasta ahora</label><br>
+            <input type="radio" id="no-impactos-significativos" name="valoracion-impacto-innovacion"
+                value="Aún no hemos visto impactos significativos">
+            <label for="no-impactos-significativos">Aún no hemos visto impactos significativos</label><br>
+
+            <p>8. En una escala del 1 al 5, donde 1 es "Nada interesado" y 5 es "Muy interesado", ¿qué tan interesada
+                está su empresa en participar en iniciativas de innovación?</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Conceptos</th>
+                        <th>Nada Interesado</th>
+                        <th>Poco Interesado</th>
+                        <th>Algo Interesado</th>
+                        <th>Bastante Interesado</th>
+                        <th>Muy Interesado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a. Innovación Cerrada</td>
+                        <td><input type="radio" name="interes-innovacion-cerrada" value="1"></td>
+                        <td><input type="radio" name="interes-innovacion-cerrada" value="2"></td>
+                        <td><input type="radio" name="interes-innovacion-cerrada" value="3"></td>
+                        <td><input type="radio" name="interes-innovacion-cerrada" value="4"></td>
+                        <td><input type="radio" name="interes-innovacion-cerrada" value="5"></td>
+                    </tr>
+                    <tr>
+                        <td>b. Innovación Abierta</td>
+                        <td><input type="radio" name="interes-innovacion-abierta" value="1"></td>
+                        <td><input type="radio" name="interes-innovacion-abierta" value="2"></td>
+                        <td><input type="radio" name="interes-innovacion-abierta" value="3"></td>
+                        <td><input type="radio" name="interes-innovacion-abierta" value="4"></td>
+                        <td><input type="radio" name="interes-innovacion-abierta" value="5"></td>
+                    </tr>
+                    <tr>
+                        <td>c. Corporate Venturing</td>
+                        <td><input type="radio" name="interes-corporate-venturing" value="1"></td>
+                        <td><input type="radio" name="interes-corporate-venturing" value="2"></td>
+                        <td><input type="radio" name="interes-corporate-venturing" value="3"></td>
+                        <td><input type="radio" name="interes-corporate-venturing" value="4"></td>
+                        <td><input type="radio" name="interes-corporate-venturing" value="5"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Si respondió "No" a la pregunta, continúe con la pregunta 9.</p>
+
+            <p>9. Considerando que hasta el momento la empresa no ha implementado actividades de innovación, ¿cuáles de
+                los siguientes resultados o impactos esperaría lograr al hacerlo en el futuro?</p>
+            <input type="checkbox" id="mejora-eficiencia-operativa" name="resultados-esperados[]"
+                value="Mejora en la eficiencia operativa">
+            <label for="mejora-eficiencia-operativa">Mejora en la eficiencia operativa.</label><br>
+            <input type="checkbox" id="incremento-calidad-productos-servicios" name="resultados-esperados[]"
+                value="Incremento en la calidad de los productos/servicios">
+            <label for="incremento-calidad-productos-servicios">Incremento en la calidad de los
+                productos/servicios.</label><br>
+            <input type="checkbox" id="reduccion-costos-operativos" name="resultados-esperados[]"
+                value="Reducción de costos operativos">
+            <label for="reduccion-costos-operativos">Reducción de costos operativos.</label><br>
+            <input type="checkbox" id="aumento-velocidad-produccion" name="resultados-esperados[]"
+                value="Aumento en la velocidad de producción">
+            <label for="aumento-velocidad-produccion">Aumento en la velocidad de producción.</label><br>
+            <input type="checkbox" id="mejora-satisfaccion-cliente" name="resultados-esperados[]"
+                value="Mejora en la satisfacción del cliente">
+            <label for="mejora-satisfaccion-cliente">Mejora en la satisfacción del cliente.</label><br>
+            <label for="otro-resultado-esperado">Otra:</label>
+            <input type="text" id="otro-resultado-esperado" name="resultados-esperados[]"><br>
+
+            <h2>Colaboradores facilitadores de información.</h2>
+
+            <p>Indique las PERSONAS que colaboraron en el diligenciamiento del formulario:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombres Apellidos</th>
+                        <th>Departamento</th>
+                        <th>Correo electrónico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="colaborador1-nombre"></td>
+                        <td><input type="text" name="colaborador1-departamento"></td>
+                        <td><input type="email" name="colaborador1-email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="colaborador2-nombre"></td>
+                        <td><input type="text" name="colaborador2-departamento"></td>
+                        <td><input type="email" name="colaborador2-email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="colaborador3-nombre"></td>
+                        <td><input type="text" name="colaborador3-departamento"></td>
+                        <td><input type="email" name="colaborador3-email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="colaborador4-nombre"></td>
+                        <td><input type="text" name="colaborador4-departamento"></td>
+                        <td><input type="email" name="colaborador4-email"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="reset">Nuevo</button>
+            <button type="submit">Enviar</button>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+        <script>
+            const supabaseUrl = 'https://zbfffnmdafhjzyoxjidb.supabase.co';
+            const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpiZmZmbm1kYWZoanp5b3hqaWRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI0MTQ4MDQsImV4cCI6MjA0Nzk5MDgwNH0.QuwCs7R2AZEqyPtPxoXtWYodAyOOigmTmPE-w2AWz7w';
+            const supabase1 = supabase.createClient(supabaseUrl, supabaseKey);
+
+            function descargarFormularioHTML() {
+                const form = document.getElementById('innovacion-form');
+                const formClone = form.cloneNode(true);  // Clona el formulario
+
+                // Recorre cada elemento del formulario clonado y asigna los valores actuales
+                formClone.querySelectorAll('input, select, textarea').forEach((element) => {
+                    let originalElement = form.elements[element.name];  // Encuentra el elemento original
+
+                    if (element.type === 'checkbox' || element.type === 'radio') {
+                        // Mantén seleccionados los checkboxes y radio buttons marcados
+                        if (originalElement && originalElement.checked) {
+                            element.setAttribute('checked', 'checked');
+                        } else {
+                            element.removeAttribute('checked');
+                        }
+                    } else if (element.tagName === 'SELECT') {
+                        // Selecciona la opción correcta en un <select>
+                        Array.from(element.options).forEach(option => {
+                            if (option.value === originalElement.value) {
+                                option.setAttribute('selected', 'selected');
+                            } else {
+                                option.removeAttribute('selected');
+                            }
+                        });
+                    } else {
+                        // Asigna valor a inputs de texto y textarea
+                        element.setAttribute('value', originalElement.value);
+                    }
+                    originalElement = null;
+                });
+
+                // Construye el HTML con el formulario clonado
+                const htmlContent = `
+                    <html>
+                    <head><title>Formulario Guardado</title></head>
+                    <body>
+                        <h1>Formulario Guardado</h1>
+                        ${formClone.outerHTML}  <!-- Inserta el formulario clonado con respuestas -->
+                    </body>
+                    </html>`;
+
+                // Crea un blob y genera el archivo HTML descargable
+                const blob = new Blob([htmlContent], { type: 'text/html' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'formulario_guardado.html';
+                link.click();
+            }
+
+            // Captura errores no controlados
+            window.onerror = function (message, source, lineno, colno, error) {
+                console.error('Error no controlado:', message);
+                alert('Ocurrió un error inesperado. Se descargará una copia del formulario.');
+                descargarFormularioHTML();  // Llama a la función de descarga
+            };
+
+            async function insertarFormulario(datosFormulario, respuestasCheckboxes, colaboraciones, e) {
+                try {
+                    // Inserta en la tabla principal de Supabase
+                    const { data, error } = await supabase1
+                        .from('cuestionario_innovacion')
+                        .insert([datosFormulario])
+                        .select();
+
+                    if (error) {
+                        throw error;
+                    }
+
+                    const cuestionarioId = data[0].id;  // ID del cuestionario insertado
+
+                    try {
+                        // Inserta las respuestas de checkboxes vinculadas al cuestionario
+                        const respuestasConId = respuestasCheckboxes.map(respuesta => ({
+                            ...respuesta,
+                            cuestionario_id: cuestionarioId  // Enlaza las respuestas al cuestionario
+                        }));
+
+                        if (respuestasConId.length > 0) {
+                            const { error: errorCheckboxes } = await supabase1
+                                .from('respuestas_opciones')  // Asegúrate de que esta es tu tabla en Supabase
+                                .insert(respuestasConId);
+
+                            if (errorCheckboxes) {
+                                throw errorCheckboxes;
+                            }
+                        }
+                    } catch (error) {
+                        console.error(error);
+                        alert('Error al enviar los checkboxes');
+                    }
+
+                    try {
+                        //insertar colaboraciones en Supabase
+                        // Agrega el ID del cuestionario a cada colaboración
+                        const colaboracionesConId = colaboraciones.map(colab => ({
+                            ...colab,
+                            cuestionario_id: cuestionarioId  // Enlaza cada colaboración al cuestionario principal
+                        }));
+
+                        // Inserta en Supabase
+                        const { error } = await supabase1
+                            .from('colaboraciones_innovacion')  // Nombre de la tabla en Supabase
+                            .insert(colaboracionesConId);
+
+                        if (error) {
+                            throw error;
+                        }
+
+                        alert('Colaboraciones enviadas correctamente');
+                    } catch (error) {
+                        console.error(error);
+                        alert('Error al enviar las colaboraciones');
+                    }
+
+                    alert('Formulario enviado correctamente');
+                    e.target.reset();  // Limpia el formulario
+
+                } catch (error) {
+                    console.error('Error al insertar datos:', error);
+                    alert('Error al enviar el formulario');
+                    alert('Ocurrió un error. Se descargará una copia del formulario.');
+                    descargarFormularioHTML();
+                }
+            }
+
+
+            document.getElementById('innovacion-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                const formData = new FormData(e.target);
+
+                // Captura de datos principales del formulario (texto, números, radio buttons)
+                const datosFormulario = {
+                    // Campos de texto, número, y fecha
+                    fecha_registro: formData.get('fecha'),
+                    provincia: formData.get('provincia'),
+                    canton: formData.get('canton'),
+                    parroquia: formData.get('parroquia'),
+                    encuestador: formData.get('encuestador'),
+                    razon_social: formData.get('razon-social'),
+                    ruc: formData.get('ruc'),
+                    direccion: formData.get('direccion'),
+                    codigo_postal: formData.get('codigo-postal'),
+                    actividad_economica: formData.get('actividad-economica'),
+                    ciiu: formData.get('ciiu'),
+                    telefono: formData.get('telefono'),
+                    email: formData.get('email'),
+                    sitio_web: formData.get('sitio-web'),
+
+                    // Radio buttons (convertidos a booleano si es necesario)
+                    grupo_empresarial: formData.get('grupo-empresarial') === 'si',
+                    empresa_publicashs: formData.get('empresa-publica') === 'si',
+
+                    // Campos numéricos
+                    capital_extranjero: parseInt(formData.get('capital-extranjero')) || 0,
+                    cantidad_establecimientos: parseInt(formData.get('establecimientos')) || 0,
+                    inicio_actividades: parseInt(formData.get('inicio-actividades')) || null
+                };
+
+                // Captura de checkboxes seleccionados, incluyendo "Otro"
+                const respuestasCheckboxes = [];
+                document.querySelectorAll('input[type="checkbox"]:checked').forEach((checkbox) => {
+                    const grupo = checkbox.name.replace('[]', '');
+                    const valor = checkbox.value;
+
+                    if (!grupo.match(/^(clientes|competidores|proveedores|consultores|universidades|laboratorios|propiedad-intelectual|otras-empresas|empresas-grupo|startups|gobierno)/)) {
+
+                        respuestasCheckboxes.push({
+                            pregunta: grupo,
+                            opcion: valor || 'Sí'  // Asigna "Sí" si el checkbox no tiene un valor definido
+                        });
+                    }
+
+                    if (valor === 'Otro') {
+                        // Captura el valor del campo de texto asociado con "Otro"
+                        const campoOtro = document.querySelector(`#${grupo}-otro`);
+                        if (campoOtro && campoOtro.value.trim() !== '') {
+                            respuestasCheckboxes.push({
+                                pregunta: grupo,
+                                opcion: campoOtro.value.trim()
+                            });
+                        }
+                    }
+                    // else {
+                    //     respuestasCheckboxes.push({
+                    //         pregunta: grupo,
+                    //         opcion: valor
+                    //     });
+                    // }
+                });
+
+                // Captura de radio buttons seleccionados
+                document.querySelectorAll('input[type="radio"]:checked').forEach((radio) => {
+                    respuestasCheckboxes.push({
+                        pregunta: radio.name,  // El nombre del grupo de radio buttons
+                        opcion: radio.value    // La opción seleccionada
+                    });
+                });
+
+
+                // Captura de campos de texto "Otro" asociados a grupos
+                document.querySelectorAll('input[type="text"]').forEach((input) => {
+                    const name = input.name;
+
+                    // Verifica si el campo pertenece a un grupo relacionado con checkboxes/radio y no está vacío
+                    if (name.includes('-otro') && input.value.trim() !== '') {
+                        const grupo = name.replace('-otro', '').replace('[]', '');  // Elimina '-otro' y corchetes si existen
+                        respuestasCheckboxes.push({
+                            pregunta: grupo,
+                            opcion: input.value.trim()  // Agrega el valor del campo de texto
+                        });
+                    }
+                });
+
+                // Array para almacenar colaboraciones
+                const colaboraciones = [];
+
+                // Actores de la tabla
+                const actores = ['clientes', 'competidores', 'proveedores', 'consultores', 'universidades',
+                    'laboratorios', 'propiedad-intelectual', 'otras-empresas',
+                    'empresas-grupo', 'startups', 'gobierno'];
+
+                // Propósitos (columnas) que corresponden a los checkboxes
+                const propositos = ['id', 'ingenieria', 'capacitacion', 'asistencia', 'rsc', 'pruebas', 'financiamiento', 'marca'];
+
+                // Recorre cada actor y captura la información relacionada
+                actores.forEach((actor) => {
+                    const frecuencia = formData.get(`frecuencia-${actor}`);  // Captura la frecuencia seleccionada
+
+                    propositos.forEach((proposito) => {
+                        // Verifica si el checkbox está marcado
+                        if (formData.get(`${actor}-${proposito}`)) {
+                            colaboraciones.push({
+                                tipo_colaborador: actor.replace(/-/g, ' '),   // Reemplaza guiones por espacios (ej. "otras-empresas" -> "otras empresas")
+                                frecuencia: obtenerFrecuenciaTexto(frecuencia),  // Convierte el valor numérico de frecuencia a texto
+                                proposito: proposito                           // Propósito relacionado
+                            });
+                        }
+                    });
+                });
+
+
+                // Envía los datos a Supabase
+                await insertarFormulario(datosFormulario, respuestasCheckboxes, colaboraciones, e);
+            });
+
+            function obtenerFrecuenciaTexto(valor) {
+                switch (valor) {
+                    case '0': return 'Nunca';
+                    case '1': return 'Rara vez (cada varios años)';
+                    case '2': return 'Ocasionalmente (algunas veces al año)';
+                    case '3': return 'Frecuentemente (al menos una vez entre 1 a 3 meses)';
+                    default: return 'Desconocido';  // Por si hay un valor inesperado
+                }
+            }
+        </script>
+
+</body>
+
+</html>
