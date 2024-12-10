@@ -1719,7 +1719,7 @@
                 // Captura de datos principales del formulario (texto, números, radio buttons)
                 const datosFormulario = {
                     // Campos de texto, número, y fecha
-                    fecha_registro: formData.get('fecha'),
+                    fecha_registro: formData.get('fecha')|| new Date(Date.now()),
                     provincia: formData.get('provincia'),
                     canton: formData.get('canton'),
                     parroquia: formData.get('parroquia'),
