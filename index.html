@@ -1825,6 +1825,18 @@
                     }
                 });
 
+                document.querySelectorAll('input[type="email"]').forEach((input) => {
+                    const name = input.name;
+
+                    // Verifica si el campo pertenece a un grupo relacionado con checkboxes/radio y no está vacío
+                    if (validaNombreEtiqueta(name) && input.value.trim() !== '') {
+                        respuestasCheckboxes.push({
+                            pregunta: name,
+                            opcion: input.value.trim()  // Agrega el valor del campo de texto
+                        });
+                    }
+                });
+
                 document.querySelectorAll('textarea').forEach((input) => {
                     const name = input.name;
 
@@ -1882,6 +1894,7 @@
             function validaNombreEtiqueta(valor){
                 if(valor.includes('Producto')|| valor.includes('codigo-cpc') || valor.includes('ventas-202')
                 || valor.includes('ventas-202')|| valor.includes('exportaciones-202')|| valor.includes('inversiones-20')
+                || valor.includes('colaborador1') || valor.includes('colaborador2') || valor.includes('colaborador3') || valor.includes('colaborador4')
                 || valor.includes('clientes-ex-202')|| valor.includes('instituciones-sin-convenio')|| valor.includes('instituciones-con-convenio')
                 || valor.includes('empleo-202')|| valor.includes('empleados-innov-202')|| valor.includes('clientes-ec-202')
             ){
